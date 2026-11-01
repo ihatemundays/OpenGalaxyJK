@@ -1,0 +1,26 @@
+<rml>
+<head>
+<title>loadscreen</title>
+<link type="text/rcss" href="ui/rml/base.rcss"/>
+<style>.item:hover span { color: #ffffffff; }</style>
+</head>
+<body style="" data-menu="loadscreen" data-x="0.0" data-y="0.0" data-onopen="">
+<div class="screen">
+<div style="position:absolute;left:0dp;top:0dp;width:640dp;height:480dp;">
+<div class="item hidden decoration" style="left:0dp;top:0dp;width:640dp;height:480dp;decorator:image(&quot;gfx/menus/load_back&quot;);image-color:#ffffffff;" data-index="0" data-name="background" data-group="none"></div>
+<div class="item hidden decoration" style="left:25dp;top:31dp;width:266dp;height:200dp;decorator:image(&quot;gfx/menus/mission_back&quot;);image-color:#ffffffff;" data-index="1" data-name="mappic" data-group="none"></div>
+<div class="item hidden decoration" style="left:20dp;top:280dp;width:540dp;height:30dp;" data-index="2" data-name="weaponicons_singlerow" data-group="none"></div>
+<div class="item hidden decoration" style="left:20dp;top:260dp;width:540dp;height:30dp;" data-index="3" data-name="weaponicons_row1" data-group="none"></div>
+<div class="item hidden decoration" style="left:20dp;top:305dp;width:540dp;height:30dp;" data-index="4" data-name="weaponicons_row2" data-group="none"></div>
+<div class="item hidden decoration" style="left:50dp;top:385dp;width:540dp;height:30dp;" data-index="5" data-name="forceicons_singlerow" data-group="none"></div>
+<div class="item hidden decoration" style="left:50dp;top:360dp;width:540dp;height:30dp;" data-index="6" data-name="forceicons_row1" data-group="none"></div>
+<div class="item hidden decoration" style="left:50dp;top:400dp;width:540dp;height:30dp;" data-index="7" data-name="forceicons_row2" data-group="none"></div>
+<div class="item" style="left:295dp;top:20dp;width:330dp;height:370dp;" data-index="8" data-name="briefingtext" data-group="none"></div>
+<div class="item decoration" style="left:23dp;top:31dp;width:270dp;height:203dp;border:2dp #4c4eb0ff;" data-index="9" data-name="background" data-group="none"></div>
+<div class="item decoration" style="left:0dp;top:0dp;width:640dp;height:640dp;decorator:image(&quot;gfx/menus/scanlines_noscroll&quot;);image-color:#ffffffff;" data-index="10" data-name="scan" data-group="none"></div>
+</div>
+<div id="rmlpaint" style="decorator:image(&quot;rmlpaint/loadscreen&quot;);"></div>
+<div id="rmldesc" style="left:-680dp;top:426dp;font-size:14dp;text-align:center;color:#c9a338b2;width:2000dp;"></div>
+</div>
+</body>
+</rml>

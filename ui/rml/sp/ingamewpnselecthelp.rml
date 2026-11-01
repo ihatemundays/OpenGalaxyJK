@@ -1,0 +1,20 @@
+<rml>
+<head>
+<title>ingameWpnSelectHelp</title>
+<link type="text/rcss" href="ui/rml/base.rcss"/>
+<style>.item:hover span { color: #ffffffff; }</style>
+</head>
+<body style="" data-menu="ingameWpnSelectHelp" data-x="141.0" data-y="71.0" data-onopen="">
+<div class="screen">
+<div style="position:absolute;left:141dp;top:71dp;width:350dp;height:375dp;">
+<div class="item decoration" style="left:5dp;top:5dp;width:350dp;height:375dp;background-color:#04043aff;border:5dp #6365ecff;" data-index="0" data-name="window"></div>
+<div class="item decoration" style="left:0dp;top:25dp;width:350dp;height:18dp;" data-index="1" data-name="instruction_title" data-group="inst_stuff"><span style="top:0dp;font-family:ergoec;font-size:20dp;left:-825dp;width:2000dp;text-align:center;color:#8cdaffff;">@MENUS_HELP</span></div>
+<div class="item decoration" style="left:25dp;top:80dp;width:300dp;height:250dp;" data-index="2" data-name="instruction_text" data-group="inst_stuff"></div>
+<div class="item hidden decoration" style="left:0dp;top:0dp;width:0dp;height:0dp;decorator:image(&quot;gfx/menus/menu_buttonback&quot;);image-color:#ffffffff;" data-index="3" data-name="button_glow" data-group="none"></div>
+<div class="item" style="left:0dp;top:315dp;width:350dp;height:18dp;" data-index="4" data-name="inst_done_button" data-group="inst_stuff" data-desc="@MENUS_HELP_DESC" data-action="play sound/misc/nomenu.wav;close ingameWpnSelectHelp" data-mouseenter="show button_glow;setitemrect button_glow 230 384 170 30" data-mouseexit="hide button_glow"><span style="top:0dp;font-family:anewhope;font-size:17dp;left:-825dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_OKAY</span></div>
+</div>
+<div id="rmlpaint" style="decorator:image(&quot;rmlpaint/ingameWpnSelectHelp&quot;);"></div>
+<div id="rmldesc" style="left:240dp;top:425dp;font-size:14dp;text-align:left;color:#ffae00cc;"></div>
+</div>
+</body>
+</rml>

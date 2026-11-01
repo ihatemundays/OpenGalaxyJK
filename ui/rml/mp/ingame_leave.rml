@@ -1,0 +1,31 @@
+<rml>
+<head>
+<title>ingame_leave</title>
+<link type="text/rcss" href="ui/rml/base.rcss"/>
+<style>.item:hover span { color: #ffffffff; }</style>
+</head>
+<body style="" data-menu="ingame_leave" data-x="474.0" data-y="40.0" data-onopen="show grpMenu;hide grpConfirm">
+<div class="screen">
+<div style="position:absolute;left:474dp;top:40dp;width:156dp;height:100dp;">
+<div class="item decoration" style="left:0dp;top:0dp;width:156dp;height:100dp;decorator:image(&quot;gfx/menus/menu_box_ingame&quot;);image-color:#ffffffff;" data-index="0" data-name="background_pic" data-group="none"></div>
+<div class="item hidden decoration" style="left:2dp;top:5dp;width:152dp;height:30dp;decorator:image(&quot;gfx/menus/menu_buttonback&quot;);image-color:#ffffffff;" data-index="1" data-name="button1" data-group="buttons"></div>
+<div class="item hidden decoration" style="left:2dp;top:35dp;width:152dp;height:30dp;decorator:image(&quot;gfx/menus/menu_buttonback&quot;);image-color:#ffffffff;" data-index="2" data-name="button2" data-group="buttons"></div>
+<div class="item hidden decoration" style="left:2dp;top:65dp;width:152dp;height:30dp;decorator:image(&quot;gfx/menus/menu_buttonback&quot;);image-color:#ffffffff;" data-index="3" data-name="button3" data-group="buttons"></div>
+<div class="item" style="left:2dp;top:5dp;width:152dp;height:30dp;" data-index="4" data-name="leave" data-group="grpMenu" data-action="play sound/interface/button1.wav;hide grpMenu;hide buttons;show leaveConfirm" data-mouseenter="show button1" data-mouseexit="hide button1"><span style="top:0dp;font-family:ergoec;font-size:20dp;left:-924dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_MAIN_MENU</span></div>
+<div class="item cvarstate" style="left:2dp;top:35dp;width:152dp;height:30dp;" data-index="5" data-cvartest="cl_currentServerAddress" data-cvarrule="enable" data-cvarvalues="Localhost" data-name="leave" data-group="grpMenu" data-action="play sound/interface/button1.wav;hide grpMenu;hide buttons;show restartConfirm" data-mouseenter="show button2" data-mouseexit="hide button2"><span style="top:0dp;font-family:ergoec;font-size:20dp;left:-924dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_RESTART_MATCH</span></div>
+<div class="item" style="left:2dp;top:65dp;width:152dp;height:30dp;" data-index="6" data-name="leave" data-group="grpMenu" data-action="play sound/interface/button1.wav;hide grpMenu;hide buttons;show quitConfirm" data-mouseenter="show button3" data-mouseexit="hide button3"><span style="top:0dp;font-family:ergoec;font-size:20dp;left:-924dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_QUIT_PROGRAM</span></div>
+<div class="item decoration" style="left:2dp;top:5dp;width:152dp;height:30dp;" data-index="7" data-name="leaveConfirm" data-group="grpConfirm"><span style="top:0dp;font-family:ergoec;font-size:20dp;left:-924dp;width:2000dp;text-align:center;color:#8cdaffff;">@MENUS_GO_TO_MAIN_MENU</span></div>
+<div class="item" style="left:2dp;top:35dp;width:152dp;height:30dp;" data-index="8" data-name="leaveConfirm" data-group="grpConfirm" data-action="play sound/interface/button1.wav;uiscript leave" data-mouseenter="show button2" data-mouseexit="hide button2"><span style="top:0dp;font-family:ergoec;font-size:20dp;left:-924dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_YES</span></div>
+<div class="item" style="left:2dp;top:65dp;width:152dp;height:30dp;" data-index="9" data-name="leaveConfirm" data-group="grpConfirm" data-action="play sound/interface/button1.wav;hide grpConfirm;show grpMenu" data-mouseenter="show button3" data-mouseexit="hide button3"><span style="top:0dp;font-family:ergoec;font-size:20dp;left:-924dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_NO</span></div>
+<div class="item decoration" style="left:2dp;top:5dp;width:152dp;height:30dp;" data-index="10" data-name="restartConfirm" data-group="grpConfirm"><span style="top:0dp;font-family:ergoec;font-size:20dp;left:-924dp;width:2000dp;text-align:center;color:#8cdaffff;">@MENUS_MATCH</span></div>
+<div class="item" style="left:2dp;top:35dp;width:152dp;height:30dp;" data-index="11" data-name="restartConfirm" data-group="grpConfirm" data-action="play sound/interface/button1.wav;exec map_restart;close ingame_leave;close ingame" data-mouseenter="show button2" data-mouseexit="hide button2"><span style="top:0dp;font-family:ergoec;font-size:20dp;left:-924dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_YES</span></div>
+<div class="item" style="left:2dp;top:65dp;width:152dp;height:30dp;" data-index="12" data-name="restartConfirm" data-group="grpConfirm" data-action="play sound/interface/button1.wav;hide grpConfirm;show grpMenu" data-mouseenter="show button3" data-mouseexit="hide button3"><span style="top:0dp;font-family:ergoec;font-size:20dp;left:-924dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_NO</span></div>
+<div class="item decoration" style="left:2dp;top:5dp;width:152dp;height:30dp;" data-index="13" data-name="quitConfirm" data-group="grpConfirm"><span style="top:0dp;font-family:ergoec;font-size:20dp;left:-924dp;width:2000dp;text-align:center;color:#8cdaffff;">@MENUS_PROGRAM</span></div>
+<div class="item" style="left:2dp;top:35dp;width:152dp;height:30dp;" data-index="14" data-name="quitConfirm" data-group="grpConfirm" data-action="play sound/interface/button1.wav;uiscript quit" data-mouseenter="show button2" data-mouseexit="hide button2"><span style="top:0dp;font-family:ergoec;font-size:20dp;left:-924dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_YES</span></div>
+<div class="item" style="left:2dp;top:65dp;width:152dp;height:30dp;" data-index="15" data-name="quitConfirm" data-group="grpConfirm" data-action="play sound/interface/button1.wav;hide grpConfirm;show grpMenu" data-mouseenter="show button3" data-mouseexit="hide button3"><span style="top:0dp;font-family:ergoec;font-size:20dp;left:-924dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_NO</span></div>
+</div>
+<div id="rmlpaint" style="decorator:image(&quot;rmlpaint/ingame_leave&quot;);"></div>
+<div id="rmldesc" style="left:0dp;top:0dp;font-size:14dp;text-align:left;color:#ffffffff;"></div>
+</div>
+</body>
+</rml>

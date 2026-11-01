@@ -1,0 +1,60 @@
+<rml>
+<head>
+<title>ingame_voicechat</title>
+<link type="text/rcss" href="ui/rml/base.rcss"/>
+<style>.item:hover span { color: #ffffffff; }</style>
+</head>
+<body style="" data-menu="ingame_voicechat" data-x="11.0" data-y="101.0" data-onopen="disable main 0;disable att_grp 0;disable def_grp 0;disable req_grp 0;disable rep_grp 0;disable spot_grp 0;disable tac_grp 0;setfocus attack;show main">
+<div class="screen">
+<div style="position:absolute;left:11dp;top:101dp;width:180dp;height:260dp;">
+<div class="item decoration" style="left:0dp;top:0dp;width:180dp;height:260dp;decorator:image(&quot;gfx/menus/menu_box_ingame&quot;);image-color:#ffffffff;" data-index="0" data-name="background_pic" data-group="none"></div>
+<div class="item decoration" style="left:0dp;top:5dp;width:180dp;height:26dp;decorator:image(&quot;gfx/menus/menu_blendbox&quot;);" data-index="1" data-name="title_small_background"></div>
+<div class="item hidden decoration" style="left:0dp;top:5dp;width:180dp;height:48dp;decorator:image(&quot;gfx/menus/menu_blendbox&quot;);" data-index="2" data-name="title_big_background"></div>
+<div class="item decoration" style="left:0dp;top:5dp;width:180dp;height:26dp;" data-index="3" data-name="title"><span style="top:2dp;font-family:anewhope;font-size:15.3dp;left:-910dp;width:2000dp;text-align:center;color:#8cdaffff;">@MENUS_VC_TITLE</span></div>
+<div class="item" style="left:10dp;top:45dp;width:160dp;height:20dp;" data-index="4" data-name="attack" data-group="main" data-action="hide title_small_background;show title_big_background;hide def_grp;hide req_grp;hide rep_grp;hide spot_grp;hide tac_grp;hide main;show att_grp;setfocus att_01"></div>
+<div class="item" style="left:10dp;top:75dp;width:160dp;height:20dp;" data-index="5" data-name="defend" data-group="main" data-action="hide title_small_background;show title_big_background;disable main 1;hide att_grp;hide req_grp;hide rep_grp;hide spot_grp;hide tac_grp;hide main;show def_grp;setfocus def_01"></div>
+<div class="item" style="left:10dp;top:105dp;width:160dp;height:20dp;" data-index="6" data-name="request" data-group="main" data-action="hide title_small_background;show title_big_background;disable main 1;hide att_grp;hide def_grp;hide req_grp;hide spot_grp;hide tac_grp;hide main;show req_grp;setfocus req_01"></div>
+<div class="item" style="left:10dp;top:135dp;width:160dp;height:20dp;" data-index="7" data-name="reply" data-group="main" data-action="hide title_small_background;show title_big_background;disable main 1;hide att_grp;hide def_grp;hide req_grp;hide spot_grp;hide tac_grp;hide main;show rep_grp;setfocus rep_01"></div>
+<div class="item" style="left:10dp;top:165dp;width:160dp;height:20dp;" data-index="8" data-name="spot" data-group="main" data-action="hide title_small_background;show title_big_background;disable main 1;hide att_grp;hide def_grp;hide req_grp;hide rep_grp;hide tac_grp;hide main;show spot_grp;setfocus spot_01"></div>
+<div class="item" style="left:10dp;top:195dp;width:160dp;height:20dp;" data-index="9" data-name="tactics" data-group="main" data-action="hide title_small_background;show title_big_background;disable main 1;hide att_grp;hide def_grp;hide req_grp;hide rep_grp;hide spot_grp;hide main;show tac_grp;setfocus tac_01"></div>
+<div class="item" style="left:10dp;top:235dp;width:160dp;height:20dp;" data-index="10" data-name="cancel" data-group="none" data-action="hide att_grp;hide def_grp;hide req_grp;hide rep_grp;hide spot_grp;hide tac_grp;show main;close all"><span style="top:-2dp;font-family:ergoec;font-size:20dp;left:-920dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_VC_CANCEL</span></div>
+<div class="item hidden decoration" style="left:0dp;top:25dp;width:180dp;height:26dp;" data-index="11" data-name="title" data-group="att_grp"><span style="top:2dp;font-family:anewhope;font-size:15.3dp;left:-910dp;width:2000dp;text-align:center;color:#8cdaffff;">@MENUS_ATTACK_TITLE</span></div>
+<div class="item hidden" style="left:10dp;top:45dp;width:160dp;height:20dp;" data-index="12" data-name="att_01" data-group="att_grp" data-action="disable att_grp 1;exec voice_cmd att_primary;hide att_grp;show main;close all"></div>
+<div class="item hidden" style="left:10dp;top:75dp;width:160dp;height:20dp;" data-index="13" data-name="att_02" data-group="att_grp" data-action="disable att_grp 1;exec voice_cmd att_second;hide att_grp;show main;close all"></div>
+<div class="item hidden" style="left:10dp;top:105dp;width:160dp;height:20dp;" data-index="14" data-name="att_03" data-group="att_grp" data-action="disable att_grp 1;exec voice_cmd att_attack;hide att_grp;show main;close all"></div>
+<div class="item hidden decoration" style="left:0dp;top:25dp;width:180dp;height:26dp;" data-index="15" data-name="title" data-group="def_grp"><span style="top:2dp;font-family:anewhope;font-size:15.3dp;left:-910dp;width:2000dp;text-align:center;color:#8cdaffff;">@MENUS_DEFEND_TITLE</span></div>
+<div class="item hidden" style="left:10dp;top:45dp;width:160dp;height:20dp;" data-index="16" data-name="def_01" data-group="def_grp" data-action="disable def_grp 1;exec voice_cmd def_primary;hide def_grp;show main;close all"></div>
+<div class="item hidden" style="left:10dp;top:75dp;width:160dp;height:20dp;" data-index="17" data-name="def_02" data-group="def_grp" data-action="disable def_grp 1;exec voice_cmd def_second;hide def_grp;show main;close all"></div>
+<div class="item hidden" style="left:10dp;top:105dp;width:160dp;height:20dp;" data-index="18" data-name="def_03" data-group="def_grp" data-action="disable def_grp 1;exec voice_cmd def_position;hide def_grp;show main;close all"></div>
+<div class="item hidden" style="left:10dp;top:135dp;width:160dp;height:20dp;" data-index="19" data-name="def_04" data-group="def_grp" data-action="disable def_grp 1;exec voice_cmd def_guns;hide def_grp;show main;close all"></div>
+<div class="item hidden decoration" style="left:0dp;top:25dp;width:180dp;height:26dp;" data-index="20" data-name="title" data-group="req_grp"><span style="top:2dp;font-family:anewhope;font-size:15.3dp;left:-910dp;width:2000dp;text-align:center;color:#8cdaffff;">@MENUS_REQUEST_TITLE</span></div>
+<div class="item hidden" style="left:10dp;top:45dp;width:160dp;height:20dp;" data-index="21" data-name="req_01" data-group="req_grp" data-action="disable req_grp 1;exec voice_cmd req_assist;hide req_grp;show main;close all"></div>
+<div class="item hidden" style="left:10dp;top:75dp;width:160dp;height:20dp;" data-index="22" data-name="req_02" data-group="req_grp" data-action="disable req_grp 1;exec voice_cmd req_medic;hide req_grp;show main;close all"></div>
+<div class="item hidden" style="left:10dp;top:105dp;width:160dp;height:20dp;" data-index="23" data-name="req_03" data-group="req_grp" data-action="disable req_grp 1;exec voice_cmd req_sup;hide req_grp;show main;close all"></div>
+<div class="item hidden" style="left:10dp;top:135dp;width:160dp;height:20dp;" data-index="24" data-name="req_04" data-group="req_grp" data-action="disable req_grp 1;exec voice_cmd req_tech;hide req_grp;show main;close all"></div>
+<div class="item hidden" style="left:10dp;top:165dp;width:160dp;height:20dp;" data-index="25" data-name="req_05" data-group="req_grp" data-action="disable req_grp 1;exec voice_cmd req_hvy;hide req_grp;show main;close all"></div>
+<div class="item hidden" style="left:10dp;top:195dp;width:160dp;height:20dp;" data-index="26" data-name="req_06" data-group="req_grp" data-action="disable req_grp 1;exec voice_cmd req_demo;hide req_grp;show main;close all"></div>
+<div class="item hidden decoration" style="left:0dp;top:25dp;width:180dp;height:26dp;" data-index="27" data-name="title" data-group="rep_grp"><span style="top:2dp;font-family:anewhope;font-size:15.3dp;left:-910dp;width:2000dp;text-align:center;color:#8cdaffff;">@MENUS_REPLY_TITLE</span></div>
+<div class="item hidden" style="left:10dp;top:45dp;width:160dp;height:20dp;" data-index="28" data-name="rep_01" data-group="rep_grp" data-action="disable rep_grp 1;exec voice_cmd reply_yes;hide rep_grp;show main;close all"></div>
+<div class="item hidden" style="left:10dp;top:75dp;width:160dp;height:20dp;" data-index="29" data-name="rep_02" data-group="rep_grp" data-action="disable rep_grp 1;exec voice_cmd reply_no;hide rep_grp;show main;close all"></div>
+<div class="item hidden" style="left:10dp;top:105dp;width:160dp;height:20dp;" data-index="30" data-name="rep_03" data-group="rep_grp" data-action="disable rep_grp 1;exec voice_cmd reply_coming;hide rep_grp;show main;close all"></div>
+<div class="item hidden" style="left:10dp;top:135dp;width:160dp;height:20dp;" data-index="31" data-name="rep_04" data-group="rep_grp" data-action="disable rep_grp 1;exec voice_cmd reply_go;hide rep_grp;show main;close all"></div>
+<div class="item hidden" style="left:10dp;top:165dp;width:160dp;height:20dp;" data-index="32" data-name="rep_05" data-group="rep_grp" data-action="disable rep_grp 1;exec voice_cmd reply_stay;hide rep_grp;show main;close all"></div>
+<div class="item hidden decoration" style="left:0dp;top:25dp;width:180dp;height:26dp;" data-index="33" data-name="title" data-group="spot_grp"><span style="top:2dp;font-family:anewhope;font-size:15.3dp;left:-910dp;width:2000dp;text-align:center;color:#8cdaffff;">@MENUS_SPOTTED_TITLE</span></div>
+<div class="item hidden" style="left:10dp;top:45dp;width:160dp;height:20dp;" data-index="34" data-name="spot_01" data-group="spot_grp" data-action="disable spot_grp 1;exec voice_cmd spot_defenses;hide spot_grp;show main;close all"></div>
+<div class="item hidden" style="left:10dp;top:75dp;width:160dp;height:20dp;" data-index="35" data-name="spot_02" data-group="spot_grp" data-action="disable spot_grp 1;exec voice_cmd spot_troops;hide spot_grp;show main;close all"></div>
+<div class="item hidden" style="left:10dp;top:105dp;width:160dp;height:20dp;" data-index="36" data-name="spot_03" data-group="spot_grp" data-action="disable spot_grp 1;exec voice_cmd spot_sniper;hide spot_grp;show main;close all"></div>
+<div class="item hidden" style="left:10dp;top:135dp;width:160dp;height:20dp;" data-index="37" data-name="spot_04" data-group="spot_grp" data-action="disable spot_grp 1;exec voice_cmd spot_emplaced;hide spot_grp;show main;close all"></div>
+<div class="item hidden decoration" style="left:0dp;top:25dp;width:180dp;height:26dp;" data-index="38" data-name="title" data-group="tac_grp"><span style="top:2dp;font-family:anewhope;font-size:15.3dp;left:-910dp;width:2000dp;text-align:center;color:#8cdaffff;">@MENUS_TACTICS_TITLE</span></div>
+<div class="item hidden" style="left:10dp;top:45dp;width:160dp;height:20dp;" data-index="39" data-name="tac_01" data-group="tac_grp" data-action="disable tac_grp 1;exec voice_cmd tac_cover;hide tac_grp;show main;close all"></div>
+<div class="item hidden" style="left:10dp;top:75dp;width:160dp;height:20dp;" data-index="40" data-name="tac_02" data-group="tac_grp" data-action="disable tac_grp 1;exec voice_cmd tac_hold;hide tac_grp;show main;close all"></div>
+<div class="item hidden" style="left:10dp;top:105dp;width:160dp;height:20dp;" data-index="41" data-name="tac_03" data-group="tac_grp" data-action="disable tac_grp 1;exec voice_cmd tac_follow;hide tac_grp;show main;close all"></div>
+<div class="item hidden" style="left:10dp;top:135dp;width:160dp;height:20dp;" data-index="42" data-name="tac_04" data-group="tac_grp" data-action="disable tac_grp 1;exec voice_cmd tac_fallback;hide tac_grp;show main;close all"></div>
+<div class="item hidden" style="left:10dp;top:165dp;width:160dp;height:20dp;" data-index="43" data-name="tac_05" data-group="tac_grp" data-action="disable tac_grp 1;exec voice_cmd tac_together;hide tac_grp;show main;close all"></div>
+<div class="item hidden" style="left:10dp;top:195dp;width:160dp;height:20dp;" data-index="44" data-name="tac_06" data-group="tac_grp" data-action="disable tac_grp 1;exec voice_cmd tac_split;hide tac_grp;show main;close all"></div>
+</div>
+<div id="rmlpaint" style="decorator:image(&quot;rmlpaint/ingame_voicechat&quot;);"></div>
+<div id="rmldesc" style="left:0dp;top:0dp;font-size:14dp;text-align:left;color:#ffffffff;"></div>
+</div>
+</body>
+</rml>

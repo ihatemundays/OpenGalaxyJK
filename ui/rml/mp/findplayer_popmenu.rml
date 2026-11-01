@@ -1,0 +1,28 @@
+<rml>
+<head>
+<title>findplayer_popmenu</title>
+<link type="text/rcss" href="ui/rml/base.rcss"/>
+<style>.item:hover span { color: #ffffffff; }</style>
+</head>
+<body style="" data-menu="findplayer_popmenu" data-x="126.0" data-y="61.0" data-onopen="uiscript FindPlayer;setfocus nameField">
+<div class="screen">
+<div style="position:absolute;left:126dp;top:61dp;width:390dp;height:360dp;">
+<div class="item decoration" style="left:1dp;top:1dp;width:390dp;height:380dp;background-color:#000059e6;border:1dp #0000ccff;" data-index="0" data-name="setup_background" data-group="none"></div>
+<div class="item decoration" style="left:25dp;top:5dp;width:340dp;height:20dp;decorator:image(&quot;gfx/menus/menu_blendbox&quot;);image-color:#8cdaffff;" data-index="1" data-name="screenTitle"><span style="top:1dp;font-family:anewhope;font-size:11.9dp;left:-830dp;width:2000dp;text-align:center;color:#8cdaffff;">@MENUS_FIND_PLAYER</span></div>
+<div class="item decoration" style="left:25dp;top:30dp;width:90dp;height:25dp;" data-index="2" data-name="nameTitle"><span style="top:0dp;font-family:ergoec;font-size:18dp;left:-1915dp;width:2000dp;text-align:right;color:#8cdaffff;">@MENUS_NAME1</span></div>
+<div class="item" style="left:116dp;top:31dp;width:250dp;height:25dp;background-color:#40404080;border:1dp #c9a338ff;" data-index="3" data-name="nameEntry" data-desc="@MENUS_INPUT_PLAYER_NAME" data-action="ui_script FindPlayer" data-mouseenter="setitemcolor nameEntry backcolor .25 .25 .25 .75" data-mouseexit="setitemcolor nameEntry backcolor .25 .25 .25 .5"><span style="top:1dp;font-family:ergoec;font-size:18dp;left:6dp;color:#ffffffff;">@MENUS_BLANK_1<span class="cvartext" data-cvar="ui_findplayer"></span></span></div>
+<div class="item" style="left:26dp;top:61dp;width:340dp;height:90dp;" data-index="4" data-name="serverNameList" data-mouseenter="setitemcolor serverNameWindow bordercolor .7 0 0 1" data-mouseexit="setitemcolor serverNameWindow bordercolor .5 .5 .5 1"></div>
+<div class="item decoration" style="left:26dp;top:61dp;width:340dp;height:90dp;background-color:#00000000;border:1dp #808080ff;" data-index="5" data-name="serverNameWindow"></div>
+<div class="item decoration" style="left:5dp;top:360dp;width:390dp;height:30dp;" data-index="6" data-name="serversFoundMsg"><span class="cvartext" data-cvar="ui_playerServersFound" style="top:1dp;font-family:anewhope;font-size:10.2dp;left:0dp;color:#8cdaffff;"></span></div>
+<div class="item" style="left:26dp;top:161dp;width:340dp;height:150dp;" data-index="7" data-name="serverInfoList" data-mouseenter="setitemcolor serverInfowindow bordercolor .7 0 0 1" data-mouseexit="setitemcolor serverInfowindow bordercolor .5 .5 .5 1"></div>
+<div class="item decoration" style="left:26dp;top:161dp;width:340dp;height:150dp;background-color:#00000000;border:1dp #808080ff;" data-index="8" data-name="serverInfowindow"></div>
+<div class="item hidden decoration" style="left:0dp;top:0dp;width:0dp;height:0dp;decorator:image(&quot;gfx/menus/menu_buttonback&quot;);image-color:#ffffffff;" data-index="9" data-name="button_glow" data-group="none"></div>
+<div class="item" style="left:15dp;top:310dp;width:120dp;height:30dp;" data-index="10" data-name="search" data-desc="@MENUS_SEARCH_DESC" data-action="play sound/interface/button1.wav;ui_script FindPlayer" data-mouseenter="show button_glow;setitemrect button_glow 15 312 150 26" data-mouseexit="hide button_glow"><span style="top:5dp;font-family:anewhope;font-size:13.6dp;left:-940dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_SEARCH_CAPS</span></div>
+<div class="item" style="left:135dp;top:310dp;width:120dp;height:30dp;" data-index="11" data-name="doneText" data-desc="@MENUS_DONE_DESC" data-action="play sound/interface/button1.wav;close findplayer_popmenu" data-mouseenter="show button_glow;setitemrect button_glow 115 312 160 26" data-mouseexit="hide button_glow"><span style="top:5dp;font-family:anewhope;font-size:13.6dp;left:-940dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_DONE_CAPS</span></div>
+<div class="item" style="left:255dp;top:310dp;width:120dp;height:30dp;" data-index="12" data-name="join" data-desc="@MENUS_JOIN_PLAYER_DESC" data-action="play sound/interface/button1.wav;ui_script FoundPlayerJoinServer" data-mouseenter="show button_glow;setitemrect button_glow 235 312 160 26" data-mouseexit="hide button_glow"><span style="top:5dp;font-family:anewhope;font-size:13.6dp;left:-940dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_JOIN_CAPS</span></div>
+</div>
+<div id="rmlpaint" style="decorator:image(&quot;rmlpaint/findplayer_popmenu&quot;);"></div>
+<div id="rmldesc" style="left:-680dp;top:400dp;font-size:14dp;text-align:center;color:#ffae00cc;width:2000dp;"></div>
+</div>
+</body>
+</rml>

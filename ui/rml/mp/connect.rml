@@ -1,0 +1,16 @@
+<rml>
+<head>
+<title>Connect</title>
+<link type="text/rcss" href="ui/rml/base.rcss"/>
+<style>.item:hover span { color: #ffffffff; }</style>
+</head>
+<body style="background-color:#000000ff;" data-menu="Connect" data-x="0.0" data-y="0.0" data-onopen="">
+<div class="screen">
+<div style="position:absolute;left:0dp;top:0dp;width:640dp;height:480dp;">
+<div class="item decoration" style="left:0dp;top:0dp;width:640dp;height:480dp;decorator:image(&quot;menu/art/unknownmap_mp&quot;);" data-index="0" data-name="miniFrame"></div>
+</div>
+<div id="rmlpaint" style="decorator:image(&quot;rmlpaint/Connect&quot;);"></div>
+<div id="rmldesc" style="left:0dp;top:0dp;font-size:14dp;text-align:left;color:#ffffffff;"></div>
+</div>
+</body>
+</rml>

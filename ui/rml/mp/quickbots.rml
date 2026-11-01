@@ -1,0 +1,35 @@
+<rml>
+<head>
+<title>quickbots</title>
+<link type="text/rcss" href="ui/rml/base.rcss"/>
+<style>.item:hover span { color: #ffffffff; }</style>
+</head>
+<body style="background-color:#000000ff;" data-menu="quickbots" data-x="100.0" data-y="50.0" data-onopen="">
+<div class="screen">
+<div style="position:absolute;left:100dp;top:50dp;width:440dp;height:380dp;">
+<div class="item decoration" style="left:3dp;top:3dp;width:440dp;height:380dp;decorator:image(&quot;gfx/menus/menu_box_ingame&quot;);image-color:#ffffffff;border:3dp #44d2e240;" data-index="0" data-name="frame_pic" data-group="none"></div>
+<div class="item decoration" style="left:55dp;top:5dp;width:330dp;height:16dp;decorator:image(&quot;gfx/menus/menu_blendbox&quot;);image-color:#ffffffff;" data-index="1" data-name="title" data-group="none"><span style="top:-1dp;font-family:anewhope;font-size:11.9dp;left:-835dp;width:2000dp;text-align:center;color:#ffffffff;">@MENUS_BOTS</span></div>
+<div class="item hidden decoration" style="left:0dp;top:0dp;width:0dp;height:0dp;decorator:image(&quot;gfx/menus/menu_buttonback&quot;);image-color:#ffffffff;" data-index="2" data-name="button_glow" data-group="none"></div>
+<div class="item" style="left:20dp;top:55dp;width:196dp;height:20dp;" data-index="3" data-name="botlist_slot" data-desc="@MENUS_CLICK_FOR_HUMAN_BOTS" data-action="play sound/interface/button1.wav" data-mouseenter="show button_glow;setitemrect button_glow 0 51 250 28" data-mouseexit="hide button_glow"></div>
+<div class="item" style="left:20dp;top:75dp;width:196dp;height:20dp;" data-index="4" data-name="botlist_slot" data-desc="@MENUS_CLICK_FOR_HUMAN_BOTS" data-action="play sound/interface/button1.wav" data-mouseenter="show button_glow;setitemrect button_glow 0 71 250 28" data-mouseexit="hide button_glow"></div>
+<div class="item" style="left:20dp;top:95dp;width:196dp;height:20dp;" data-index="5" data-name="botlist_slot" data-desc="@MENUS_CLICK_FOR_HUMAN_BOTS" data-action="play sound/interface/button1.wav" data-mouseenter="show button_glow;setitemrect button_glow 0 91 250 28" data-mouseexit="hide button_glow"></div>
+<div class="item" style="left:20dp;top:115dp;width:196dp;height:20dp;" data-index="6" data-name="botlist_slot" data-desc="@MENUS_CLICK_FOR_HUMAN_BOTS" data-action="play sound/interface/button1.wav" data-mouseenter="show button_glow;setitemrect button_glow 0 111 250 28" data-mouseexit="hide button_glow"></div>
+<div class="item" style="left:20dp;top:135dp;width:196dp;height:20dp;" data-index="7" data-name="botlist_slot" data-desc="@MENUS_CLICK_FOR_HUMAN_BOTS" data-action="play sound/interface/button1.wav" data-mouseenter="show button_glow;setitemrect button_glow 0 131 250 28" data-mouseexit="hide button_glow"></div>
+<div class="item" style="left:20dp;top:155dp;width:196dp;height:20dp;" data-index="8" data-name="botlist_slot" data-desc="@MENUS_CLICK_FOR_HUMAN_BOTS" data-action="play sound/interface/button1.wav" data-mouseenter="show button_glow;setitemrect button_glow 0 151 250 28" data-mouseexit="hide button_glow"></div>
+<div class="item" style="left:20dp;top:175dp;width:196dp;height:20dp;" data-index="9" data-name="botlist_slot" data-desc="@MENUS_CLICK_FOR_HUMAN_BOTS" data-action="play sound/interface/button1.wav" data-mouseenter="show button_glow;setitemrect button_glow 0 171 250 28" data-mouseexit="hide button_glow"></div>
+<div class="item" style="left:20dp;top:195dp;width:196dp;height:20dp;" data-index="10" data-name="botlist_slot" data-desc="@MENUS_CLICK_FOR_HUMAN_BOTS" data-action="play sound/interface/button1.wav" data-mouseenter="show button_glow;setitemrect button_glow 0 191 250 28" data-mouseexit="hide button_glow"></div>
+<div class="item" style="left:220dp;top:55dp;width:196dp;height:20dp;" data-index="11" data-name="botlist_slot" data-desc="@MENUS_CLICK_FOR_HUMAN_BOTS" data-action="play sound/interface/button1.wav" data-mouseenter="show button_glow;setitemrect button_glow 200 51 250 28" data-mouseexit="hide button_glow"></div>
+<div class="item" style="left:220dp;top:75dp;width:196dp;height:20dp;" data-index="12" data-name="botlist_slot" data-desc="@MENUS_CLICK_FOR_HUMAN_BOTS" data-action="play sound/interface/button1.wav" data-mouseenter="show button_glow;setitemrect button_glow 200 71 250 28" data-mouseexit="hide button_glow"></div>
+<div class="item" style="left:220dp;top:95dp;width:196dp;height:20dp;" data-index="13" data-name="botlist_slot" data-desc="@MENUS_CLICK_FOR_HUMAN_BOTS" data-action="play sound/interface/button1.wav" data-mouseenter="show button_glow;setitemrect button_glow 200 91 250 28" data-mouseexit="hide button_glow"></div>
+<div class="item" style="left:220dp;top:115dp;width:196dp;height:20dp;" data-index="14" data-name="botlist_slot" data-desc="@MENUS_CLICK_FOR_HUMAN_BOTS" data-action="play sound/interface/button1.wav" data-mouseenter="show button_glow;setitemrect button_glow 200 111 250 28" data-mouseexit="hide button_glow"></div>
+<div class="item" style="left:220dp;top:135dp;width:196dp;height:20dp;" data-index="15" data-name="botlist_slot" data-desc="@MENUS_CLICK_FOR_HUMAN_BOTS" data-action="play sound/interface/button1.wav" data-mouseenter="show button_glow;setitemrect button_glow 200 131 250 28" data-mouseexit="hide button_glow"></div>
+<div class="item" style="left:220dp;top:155dp;width:196dp;height:20dp;" data-index="16" data-name="botlist_slot" data-desc="@MENUS_CLICK_FOR_HUMAN_BOTS" data-action="play sound/interface/button1.wav" data-mouseenter="show button_glow;setitemrect button_glow 200 151 250 28" data-mouseexit="hide button_glow"></div>
+<div class="item" style="left:220dp;top:175dp;width:196dp;height:20dp;" data-index="17" data-name="botlist_slot" data-desc="@MENUS_CLICK_FOR_HUMAN_BOTS" data-action="play sound/interface/button1.wav" data-mouseenter="show button_glow;setitemrect button_glow 200 171 250 28" data-mouseexit="hide button_glow"></div>
+<div class="item" style="left:220dp;top:195dp;width:196dp;height:20dp;" data-index="18" data-name="botlist_slot" data-desc="@MENUS_CLICK_FOR_HUMAN_BOTS" data-action="play sound/interface/button1.wav" data-mouseenter="show button_glow;setitemrect button_glow 200 191 250 28" data-mouseexit="hide button_glow"></div>
+<div class="item" style="left:140dp;top:352dp;width:160dp;height:30dp;" data-index="19" data-name="done" data-desc="@MENUS_RETURN_PREVIOUS" data-action="play sound/interface/button1.wav;close quickbots" data-mouseenter="show button_glow;setitemrect button_glow 130 350 200 34" data-mouseexit="hide button_glow"><span style="top:0dp;font-family:anewhope;font-size:17dp;left:-920dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_DONE</span></div>
+</div>
+<div id="rmlpaint" style="decorator:image(&quot;rmlpaint/quickbots&quot;);"></div>
+<div id="rmldesc" style="left:-680dp;top:380dp;font-size:14dp;text-align:center;color:#ffae00ff;width:2000dp;"></div>
+</div>
+</body>
+</rml>

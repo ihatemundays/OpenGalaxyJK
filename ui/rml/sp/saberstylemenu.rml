@@ -1,0 +1,30 @@
+<rml>
+<head>
+<title>saberstyleMenu</title>
+<link type="text/rcss" href="ui/rml/base.rcss"/>
+<style>.item:hover span { color: #ffffffff; }</style>
+</head>
+<body style="background-color:#000000ff;" data-menu="saberstyleMenu" data-x="0.0" data-y="0.0" data-onopen="uiscript getsabercvars;uiscript updatefightingstylechoices;setfocus new_fightingstyle_button;uiscript saber_hilt;uiscript saber_color">
+<div class="screen">
+<div style="position:absolute;left:0dp;top:0dp;width:640dp;height:480dp;">
+<div class="item decoration" style="left:0dp;top:0dp;width:640dp;height:480dp;decorator:image(&quot;gfx/menus/sabermenu_back&quot;);image-color:#ffffffff;" data-index="0" data-name="background" data-group="none"></div>
+<div class="item decoration" style="left:127dp;top:53dp;width:198dp;height:40dp;decorator:image(&quot;gfx/menus/sabermenu_stylebox_left&quot;);image-color:#ffffffff;" data-index="1" data-name="styleboxleft" data-group="none"></div>
+<div class="item decoration" style="left:325dp;top:53dp;width:198dp;height:40dp;decorator:image(&quot;gfx/menus/sabermenu_stylebox_right&quot;);image-color:#ffffffff;" data-index="2" data-name="styleboxright" data-group="none"></div>
+<div class="item decoration" style="left:127dp;top:118dp;width:198dp;height:40dp;decorator:image(&quot;gfx/menus/sabermenu_stylebox_left&quot;);image-color:#ffffffff;" data-index="3" data-name="styleboxleft" data-group="none"></div>
+<div class="item decoration" style="left:325dp;top:118dp;width:198dp;height:40dp;decorator:image(&quot;gfx/menus/sabermenu_stylebox_right&quot;);image-color:#ffffffff;" data-index="4" data-name="styleboxright" data-group="none"></div>
+<div class="item decoration" style="left:100dp;top:26dp;width:440dp;height:24dp;decorator:image(&quot;gfx/menus/menu_blendbox&quot;);image-color:#ffffffff;" data-index="5" data-name="title_glow" data-group="none"></div>
+<div class="item decoration" style="left:100dp;top:30dp;width:440dp;height:16dp;" data-index="6" data-name="title" data-group="title"><span style="top:-1dp;font-family:anewhope;font-size:13.6dp;left:-775dp;width:2000dp;text-align:center;color:#8cdaffff;">@MENUS_CHOOSE_SABER_STYLE</span></div>
+<div class="item" style="left:140dp;top:60dp;width:0dp;height:0dp;" data-index="7" data-name="fightingstylebutton1" data-group="none" data-desc="@MENUS_ADDFIGHTINGSTYLE"><span style="top:0dp;font-family:anewhope;font-size:17dp;left:0dp;color:#8cdaffff;">@MENUS_CURRENT_STYLE<span class="cvartext" data-cvar="ui_currentfightingstyle" data-multi="@MENUS_COMBATSTYLEFAST;0;@MENUS_COMBATSTYLEMEDIUM;1;@MENUS_COMBATSTYLEHEAVY;2"></span></span></div>
+<div class="item" style="left:140dp;top:125dp;width:380dp;height:24dp;" data-index="8" data-name="new_fightingstyle_button" data-group="none" data-desc="@MENUS_ADDFIGHTINGSTYLE" data-action="play sound/interface/button1.wav" data-mouseenter="show button_glow;setitemrect button_glow 180 124 380 26" data-mouseexit="hide button_glow"><span style="top:0dp;font-family:anewhope;font-size:17dp;left:0dp;color:#9d9df4ff;">@MENUS_NEW_STYLE<span class="cvartext" data-cvar="ui_newfightingstyle" data-multi="@MENUS_COMBATSTYLEFAST;0;@MENUS_COMBATSTYLEHEAVY;2"></span></span></div>
+<div class="item decoration" style="left:128dp;top:161dp;width:395dp;height:64dp;background-color:#000059b2;border:1dp #0000ccff;" data-index="9" data-name="briefing_background" data-group="none"></div>
+<div class="item cvarstate" style="left:130dp;top:162dp;width:392dp;height:60dp;" data-index="10" data-cvartest="ui_newfightingstyle" data-cvarrule="show" data-cvarvalues="0" data-name="new_fightingstyle_desc" data-group="none"></div>
+<div class="item cvarstate" style="left:130dp;top:162dp;width:392dp;height:60dp;" data-index="11" data-cvartest="ui_newfightingstyle" data-cvarrule="show" data-cvarvalues="2" data-name="new_fightingstyle_desc" data-group="none"></div>
+<div class="item decoration" style="left:12dp;top:-110dp;width:615dp;height:615dp;" data-index="12" data-name="saber" data-group="models"></div>
+<div class="item" style="left:455dp;top:444dp;width:130dp;height:24dp;" data-index="13" data-name="continue" data-group="none" data-desc="@MENUS_NEW_MISSION_DESC" data-action="uiscript updatesabercvars;uiscript updatefightingstyle;close all;setcvar tier_storyinfo 7;setcvar storyhead protocol;open ingameGotoTier;playvoice sound/chars/storyinfo/7.mp3" data-mouseenter="show button_glow;setitemrect button_glow 455 444 130 24" data-mouseexit="hide button_glow"><span style="top:0dp;font-family:anewhope;font-size:17dp;left:-935dp;width:2000dp;text-align:center;color:#262626ff;">@MENUS_CONTINUE</span><span style="top:-1dp;font-family:anewhope;font-size:17dp;left:-935dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_CONTINUE</span></div>
+<div class="item hidden decoration" style="left:455dp;top:444dp;width:130dp;height:24dp;decorator:image(&quot;gfx/menus/menu_buttonback&quot;);image-color:#ffffffff;" data-index="14" data-name="button_glow" data-group="mods"></div>
+</div>
+<div id="rmlpaint" style="decorator:image(&quot;rmlpaint/saberstyleMenu&quot;);"></div>
+<div id="rmldesc" style="left:-680dp;top:426dp;font-size:14dp;text-align:center;color:#ffae00cc;width:2000dp;"></div>
+</div>
+</body>
+</rml>

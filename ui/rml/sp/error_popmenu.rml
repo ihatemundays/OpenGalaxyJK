@@ -1,0 +1,20 @@
+<rml>
+<head>
+<title>error_popmenu</title>
+<link type="text/rcss" href="ui/rml/base.rcss"/>
+<style>.item:hover span { color: #ffffffff; }</style>
+</head>
+<body style="" data-menu="error_popmenu" data-x="159.0" data-y="81.0" data-onopen="">
+<div class="screen">
+<div style="position:absolute;left:159dp;top:81dp;width:320dp;height:320dp;">
+<div class="item decoration" style="left:15dp;top:20dp;width:300dp;height:320dp;background-color:#04043aff;border:5dp #fcfb1fff;" data-index="0" data-name="window"></div>
+<div class="item decoration" style="left:0dp;top:50dp;width:320dp;height:20dp;" data-index="1" data-name="errorinfo"><span style="top:2dp;font-family:ergoec;font-size:20dp;left:-840dp;width:2000dp;text-align:center;color:#262626ff;">@MENUS_ERROR</span><span style="top:0dp;font-family:ergoec;font-size:20dp;left:-840dp;width:2000dp;text-align:center;color:#ffffffff;">@MENUS_ERROR</span></div>
+<div class="item decoration" style="left:60dp;top:80dp;width:200dp;height:270dp;" data-index="2" data-name="errorinfo"><span class="wrap cvartext" data-cvar="com_errorMessage" style="top:2dp;font-family:ergoec;font-size:20dp;left:0;width:200dp;text-align:center;color:#262626ff;"></span><span class="wrap cvartext" data-cvar="com_errorMessage" style="top:0dp;font-family:ergoec;font-size:20dp;left:0;width:200dp;text-align:center;color:#ffffffff;"></span></div>
+<div class="item hidden decoration" style="left:118dp;top:295dp;width:85dp;height:26dp;decorator:image(&quot;gfx/menus/menu_buttonback&quot;);image-color:#ffffffff;" data-index="3" data-name="button_glow" data-group="none"></div>
+<div class="item" style="left:138dp;top:295dp;width:45dp;height:26dp;" data-index="4" data-name="exit" data-group="grpControlbutton" data-action="play sound/misc/nomenu.wav;close error_popmenu;open mainMenu" data-mouseenter="show button_glow" data-mouseexit="hide button_glow"><span style="top:0dp;font-family:ergoec;font-size:20dp;left:-978dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_OKAY</span></div>
+</div>
+<div id="rmlpaint" style="decorator:image(&quot;rmlpaint/error_popmenu&quot;);"></div>
+<div id="rmldesc" style="left:0dp;top:0dp;font-size:14dp;text-align:left;color:#ffffffff;"></div>
+</div>
+</body>
+</rml>

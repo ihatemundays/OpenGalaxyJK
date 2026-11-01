@@ -1,0 +1,36 @@
+<rml>
+<head>
+<title>quitMenu</title>
+<link type="text/rcss" href="ui/rml/base.rcss"/>
+<style>.item:hover span { color: #ffffffff; }</style>
+</head>
+<body style="background-color:#000000ff;" data-menu="quitMenu" data-x="0.0" data-y="0.0" data-onopen="setfocus quitgame_cancel">
+<div class="screen">
+<div style="position:absolute;left:0dp;top:0dp;width:640dp;height:480dp;">
+<div class="item decoration" style="left:156dp;top:154dp;width:320dp;height:240dp;decorator:image(&quot;gfx/menus/main_centerblue&quot;);image-color:#ffffffff;" data-index="0" data-name="really_background" data-group="none"></div>
+<div class="item decoration" style="left:0dp;top:0dp;width:160dp;height:480dp;decorator:image(&quot;gfx/menus/menu_side_text&quot;);image-color:#ffffffff;" data-index="1" data-name="background_text" data-group="none"></div>
+<div class="item decoration" style="left:480dp;top:0dp;width:160dp;height:480dp;decorator:image(&quot;gfx/menus/menu_side_text_right&quot;);image-color:#ffffffff;" data-index="2" data-name="background_text_b" data-group="none"></div>
+<div class="item decoration" style="left:0dp;top:0dp;width:640dp;height:480dp;decorator:image(&quot;gfx/menus/main_background&quot;);image-color:#ffffffff;" data-index="3" data-name="background" data-group="none"></div>
+<div class="item decoration" style="left:107dp;top:8dp;width:428dp;height:112dp;decorator:image(&quot;gfx/menus/jediacademy&quot;);image-color:#ffffffff;" data-index="4" data-name="starwars" data-group="none"></div>
+<div class="item decoration" style="left:0dp;top:50dp;width:320dp;height:160dp;decorator:image(&quot;gfx/menus/menu_boxes_left&quot;);image-color:#ffffffff;" data-index="5" data-name="left_frame" data-group="lf_fr"></div>
+<div class="item decoration" style="left:320dp;top:50dp;width:320dp;height:160dp;decorator:image(&quot;gfx/menus/menu_boxes_right&quot;);image-color:#ffffffff;" data-index="6" data-name="right_frame" data-group="rt_fr"></div>
+<div class="item hidden decoration" style="left:7dp;top:126dp;width:130dp;height:24dp;decorator:image(&quot;gfx/menus/menu_buttonback&quot;);image-color:#ffffffff;" data-index="7" data-name="newbutton_glow" data-group="none"></div>
+<div class="item" style="left:7dp;top:126dp;width:130dp;height:24dp;" data-index="8" data-name="newgamebutton" data-group="nbut" data-desc="@MENUS_START_A_NEW_GAME" data-action="play sound/interface/button1.wav;close all;open newgameMenu" data-mouseenter="show newbutton_glow" data-mouseexit="hide newbutton_glow"><span style="top:0dp;font-family:anewhope;font-size:18.7dp;left:-935dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_NEW</span></div>
+<div class="item hidden decoration" style="left:170dp;top:126dp;width:130dp;height:24dp;decorator:image(&quot;gfx/menus/menu_buttonback&quot;);image-color:#ffffffff;" data-index="9" data-name="loadgamebutton_glow" data-group="none"></div>
+<div class="item" style="left:170dp;top:126dp;width:130dp;height:24dp;" data-index="10" data-name="loadgamebutton" data-group="lbut" data-desc="@MENUS_LOAD_A_SAVED_GAME" data-action="play sound/interface/button1.wav;close all;open loadgameMenu" data-mouseenter="show loadgamebutton_glow" data-mouseexit="hide loadgamebutton_glow"><span style="top:0dp;font-family:anewhope;font-size:18.7dp;left:-935dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_LOAD</span></div>
+<div class="item hidden decoration" style="left:340dp;top:126dp;width:130dp;height:24dp;decorator:image(&quot;gfx/menus/menu_buttonback&quot;);image-color:#ffffffff;" data-index="11" data-name="controlsbutton_glow" data-group="none"></div>
+<div class="item" style="left:340dp;top:126dp;width:130dp;height:24dp;" data-index="12" data-name="controlsbutton" data-group="cbut" data-desc="@MENUS_CONFIGURE_GAME_CONTROLS" data-action="play sound/interface/button1.wav;close all;open controlsMenu" data-mouseenter="show controlsbutton_glow" data-mouseexit="hide controlsbutton_glow"><span style="top:0dp;font-family:anewhope;font-size:18.7dp;left:-935dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_CONTROLS</span></div>
+<div class="item hidden decoration" style="left:502dp;top:126dp;width:130dp;height:24dp;decorator:image(&quot;gfx/menus/menu_buttonback&quot;);image-color:#ffffffff;" data-index="13" data-name="setupbutton_glow" data-group="none"></div>
+<div class="item" style="left:502dp;top:126dp;width:130dp;height:24dp;" data-index="14" data-name="setupbutton" data-group="sbut" data-desc="@MENUS_CONFIGURE_GAME_SETTINGS" data-action="play sound/interface/button1.wav;close all;open setupMenu" data-mouseenter="show setupbutton_glow" data-mouseexit="hide setupbutton_glow"><span style="top:0dp;font-family:anewhope;font-size:18.7dp;left:-935dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_SETUP</span></div>
+<div class="item decoration" style="left:100dp;top:164dp;width:440dp;height:16dp;decorator:image(&quot;gfx/menus/menu_blendbox&quot;);image-color:#8cdaffff;" data-index="15" data-name="quit_title" data-group="none"><span style="top:-1dp;font-family:anewhope;font-size:11.9dp;left:-775dp;width:2000dp;text-align:center;color:#8cdaffff;">@MENUS_LEAVING_JEDI_KNIGHT_2</span></div>
+<div class="item decoration" style="left:0dp;top:250dp;width:640dp;height:20dp;" data-index="16" data-name="confirm" data-group="none"><span style="top:0dp;font-family:ergoec;font-size:20dp;left:-680dp;width:2000dp;text-align:center;color:#ffffffff;">@MENUS_QUIT_JEDI_KNIGHT_II</span></div>
+<div class="item hidden decoration" style="left:59dp;top:444dp;width:130dp;height:24dp;decorator:image(&quot;gfx/menus/menu_buttonback&quot;);image-color:#ffffffff;" data-index="17" data-name="quitgame_no_button" data-group="none"></div>
+<div class="item" style="left:59dp;top:444dp;width:130dp;height:24dp;" data-index="18" data-name="quitgame_no" data-group="none" data-desc="@MENUS_DO_NOT_LEAVE_JEDI_KNIGHT" data-action="play sound/interface/esc.wav;close quitMenu;open mainMenu" data-mouseenter="show quitgame_no_button" data-mouseexit="hide quitgame_no_button"><span style="top:-1dp;font-family:anewhope;font-size:17dp;left:-935dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_NO</span></div>
+<div class="item hidden decoration" style="left:454dp;top:444dp;width:130dp;height:24dp;decorator:image(&quot;gfx/menus/menu_buttonback&quot;);image-color:#ffffffff;" data-index="19" data-name="quitgame_yes_button" data-group="none"></div>
+<div class="item" style="left:454dp;top:444dp;width:130dp;height:24dp;" data-index="20" data-name="quitgame_yes" data-group="none" data-desc="@MENUS_JEDI_KNIGHT_II" data-action="play sound/interface/button1.wav;uiscript Quit" data-mouseenter="show quitgame_yes_button" data-mouseexit="hide quitgame_yes_button"><span style="top:-1dp;font-family:anewhope;font-size:17dp;left:-935dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_YES</span></div>
+</div>
+<div id="rmlpaint" style="decorator:image(&quot;rmlpaint/quitMenu&quot;);"></div>
+<div id="rmldesc" style="left:-680dp;top:426dp;font-size:14dp;text-align:center;color:#ffae00cc;width:2000dp;"></div>
+</div>
+</body>
+</rml>

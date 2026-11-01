@@ -1,0 +1,34 @@
+<rml>
+<head>
+<title>mainMenu</title>
+<link type="text/rcss" href="ui/rml/base.rcss"/>
+<style>.item:hover span { color: #ffffffff; }</style>
+</head>
+<body style="background-color:#000000ff;" data-menu="mainMenu" data-x="0.0" data-y="0.0" data-onopen="setfocus newgamebutton">
+<div class="screen">
+<div style="position:absolute;left:0dp;top:0dp;width:640dp;height:480dp;">
+<div class="item decoration" style="left:200dp;top:144dp;width:256dp;height:256dp;decorator:image(&quot;gfx/menus/videologo&quot;);image-color:#ffffffff;" data-index="0" data-name="background_video" data-group="none"></div>
+<div class="item decoration" style="left:0dp;top:0dp;width:160dp;height:480dp;decorator:image(&quot;gfx/menus/menu_side_text&quot;);image-color:#ffffffff;" data-index="1" data-name="background_text" data-group="none"></div>
+<div class="item decoration" style="left:480dp;top:0dp;width:160dp;height:480dp;decorator:image(&quot;gfx/menus/menu_side_text_right&quot;);image-color:#ffffffff;" data-index="2" data-name="background_text_b" data-group="none"></div>
+<div class="item decoration" style="left:0dp;top:0dp;width:640dp;height:480dp;decorator:image(&quot;gfx/menus/main_background&quot;);image-color:#ffffffff;" data-index="3" data-name="background" data-group="none"></div>
+<div class="item decoration" style="left:193dp;top:145dp;width:256dp;height:256dp;decorator:image(&quot;gfx/menus/main_ring&quot;);image-color:#ffffffff;" data-index="4" data-name="ring" data-group="none"></div>
+<div class="item decoration" style="left:156dp;top:154dp;width:320dp;height:240dp;decorator:image(&quot;gfx/menus/main_centerwindow&quot;);image-color:#ffffffff;" data-index="5" data-name="centerwindow" data-group="none"></div>
+<div class="item decoration" style="left:0dp;top:150dp;width:320dp;height:240dp;decorator:image(&quot;gfx/menus/main_leftwindow&quot;);image-color:#ffffffff;" data-index="6" data-name="leftwindow" data-group="none"></div>
+<div class="item decoration" style="left:320dp;top:150dp;width:320dp;height:240dp;decorator:image(&quot;gfx/menus/main_rightwindow&quot;);image-color:#ffffffff;" data-index="7" data-name="rightwindow" data-group="none"></div>
+<div class="item decoration" style="left:107dp;top:8dp;width:428dp;height:112dp;decorator:image(&quot;gfx/menus/jediacademy&quot;);image-color:#ffffffff;" data-index="8" data-name="starwars" data-group="none"></div>
+<div class="item hidden decoration" style="left:0dp;top:0dp;width:0dp;height:0dp;decorator:image(&quot;gfx/menus/menu_buttonback&quot;);image-color:#ffffffff;" data-index="9" data-name="button_glow" data-group="mods"></div>
+<div class="item hidden decoration" style="left:36dp;top:194dp;width:130dp;height:24dp;" data-index="10" data-name="newgamebutton_undertext" data-group="toprow"><span style="top:0dp;font-family:aurabesh;font-size:12.6dp;left:-935dp;width:2000dp;text-align:center;color:#050054ff;">@MENUS_NEW</span></div>
+<div class="item" style="left:36dp;top:212dp;width:130dp;height:24dp;" data-index="11" data-name="newgamebutton" data-group="toprow" data-desc="@MENUS_START_A_NEW_GAME" data-action="play sound/interface/button1.wav;close all;open newgamefirstMenu" data-mouseenter="show button_glow;setitemrect button_glow 16 210 210 32;show newgamebutton_undertext" data-mouseexit="hide button_glow;hide newgamebutton_undertext"><span style="top:0dp;font-family:anewhope;font-size:18.7dp;left:-935dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_NEW</span></div>
+<div class="item hidden decoration" style="left:36dp;top:293dp;width:130dp;height:24dp;" data-index="12" data-name="loadgamebutton_undertext" data-group="toprow"><span style="top:0dp;font-family:aurabesh;font-size:12.6dp;left:-935dp;width:2000dp;text-align:center;color:#050054ff;">@MENUS_LOAD</span></div>
+<div class="item" style="left:36dp;top:310dp;width:130dp;height:24dp;" data-index="13" data-name="loadgamebutton" data-group="toprow" data-desc="@MENUS_LOAD_A_SAVED_GAME" data-action="play sound/interface/button1.wav;close all;open loadgameMenu" data-mouseenter="show button_glow;setitemrect button_glow 16 308 210 32;show loadgamebutton_undertext" data-mouseexit="hide button_glow;hide loadgamebutton_undertext"><span style="top:0dp;font-family:anewhope;font-size:18.7dp;left:-935dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_LOAD</span></div>
+<div class="item hidden decoration" style="left:448dp;top:194dp;width:146dp;height:24dp;" data-index="14" data-name="controlsbutton_undertext" data-group="toprow"><span style="top:0dp;font-family:aurabesh;font-size:12.6dp;left:-935dp;width:2000dp;text-align:center;color:#050054ff;">@MENUS_CONTROLS2</span></div>
+<div class="item" style="left:456dp;top:212dp;width:130dp;height:24dp;" data-index="15" data-name="controlsbutton" data-group="toprow" data-desc="@MENUS_CONFIGURE_GAME_CONTROLS" data-action="play sound/interface/button1.wav;close all;open controlsMenu" data-mouseenter="show button_glow;setitemrect button_glow 416 210 210 32;show controlsbutton_undertext" data-mouseexit="hide button_glow;hide controlsbutton_undertext"><span style="top:0dp;font-family:anewhope;font-size:18.7dp;left:-935dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_CONTROLS</span></div>
+<div class="item hidden decoration" style="left:456dp;top:292dp;width:130dp;height:24dp;" data-index="16" data-name="setupbutton_undertext" data-group="toprow"><span style="top:0dp;font-family:aurabesh;font-size:12.6dp;left:-935dp;width:2000dp;text-align:center;color:#050054ff;">@MENUS_SETUP</span></div>
+<div class="item" style="left:456dp;top:310dp;width:130dp;height:24dp;" data-index="17" data-name="setupbutton" data-group="toprow" data-desc="@MENUS_CONFIGURE_GAME_SETTINGS" data-action="play sound/interface/button1.wav;close all;open setupMenu" data-mouseenter="show button_glow;setitemrect button_glow 416 308 210 32;show setupbutton_undertext" data-mouseexit="hide button_glow;hide setupbutton_undertext"><span style="top:0dp;font-family:anewhope;font-size:18.7dp;left:-935dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_SETUP</span></div>
+<div class="item" style="left:255dp;top:444dp;width:130dp;height:24dp;" data-index="18" data-name="exitgamebutton" data-group="othermain" data-desc="@MENUS_JEDI_KNIGHT_II" data-action="play sound/weapons/saber/saberoff.mp3;close all;open quitMenu" data-mouseenter="show button_glow;setitemrect button_glow 215 440 210 32" data-mouseexit="hide button_glow"><span style="top:0dp;font-family:anewhope;font-size:18.7dp;left:-935dp;width:2000dp;text-align:center;color:#262626ff;">@MENUS_EXIT</span><span style="top:-1dp;font-family:anewhope;font-size:18.7dp;left:-935dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_EXIT</span></div>
+</div>
+<div id="rmlpaint" style="decorator:image(&quot;rmlpaint/mainMenu&quot;);"></div>
+<div id="rmldesc" style="left:-680dp;top:426dp;font-size:14dp;text-align:center;color:#ffae00cc;width:2000dp;"></div>
+</div>
+</body>
+</rml>

@@ -1,0 +1,21 @@
+<rml>
+<head>
+<title>ingame_addbot</title>
+<link type="text/rcss" href="ui/rml/base.rcss"/>
+<style>.item:hover span { color: #ffffffff; }</style>
+</head>
+<body style="" data-menu="ingame_addbot" data-x="106.0" data-y="41.0" data-onopen="">
+<div class="screen">
+<div style="position:absolute;left:106dp;top:41dp;width:240dp;height:128dp;">
+<div class="item decoration" style="left:0dp;top:0dp;width:240dp;height:128dp;decorator:image(&quot;gfx/menus/menu_box_ingame&quot;);image-color:#ffffffff;" data-index="0" data-name="background_pic" data-group="none"></div>
+<div class="item" style="left:2dp;top:4dp;width:236dp;height:30dp;" data-index="1" data-name="gametypefield" data-action="play sound/interface/button1.wav"></div>
+<div class="item cvarstate" style="left:2dp;top:34dp;width:236dp;height:30dp;" data-index="2" data-cvartest="g_gametype" data-cvarrule="disable" data-cvarvalues="0;1;2;3;4;5" data-name="gametypefield" data-action="play sound/interface/button1.wav"></div>
+<div class="item" style="left:2dp;top:64dp;width:236dp;height:30dp;" data-index="3" data-name="gametypefield" data-action="play sound/interface/button1.wav"></div>
+<div class="item hidden decoration" style="left:20dp;top:94dp;width:200dp;height:30dp;decorator:image(&quot;gfx/menus/menu_buttonback&quot;);image-color:#ffffffff;" data-index="4" data-name="okButton" data-group="none"></div>
+<div class="item" style="left:20dp;top:94dp;width:200dp;height:30dp;" data-index="5" data-name="ok" data-action="play sound/interface/button1.wav;uiscript addBot;uiscript closeingame" data-mouseenter="show okButton" data-mouseexit="hide okButton"><span style="top:2dp;font-family:ergoec;font-size:20dp;left:-920dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_ADD_BOT</span></div>
+</div>
+<div id="rmlpaint" style="decorator:image(&quot;rmlpaint/ingame_addbot&quot;);"></div>
+<div id="rmldesc" style="left:0dp;top:0dp;font-size:14dp;text-align:left;color:#ffffffff;"></div>
+</div>
+</body>
+</rml>
