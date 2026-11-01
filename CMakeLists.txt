@@ -62,13 +62,15 @@ cmake_dependent_option(BuildSymbolServer "Build WIP Windows Symbol Server (exper
 # a platform that does not require any bundling.
 #
 # Note that we always use the bundled copy of minizip, since it is modified to
-# use Z_Malloc.
+# use Z_Malloc.  RmlUi defaults to bundled everywhere, since few platforms
+# package it.
 
 set(UseInternalOpenALDefault OFF)
 set(UseInternalZlibDefault   OFF)
 set(UseInternalPNGDefault    OFF)
 set(UseInternalJPEGDefault   OFF)
 set(UseInternalSDL2Default   OFF)
+set(UseInternalRmlUiDefault  ON)
 
 if(UseInternalLibs OR WIN32)
   set(UseInternalOpenALDefault ON)
@@ -88,6 +90,7 @@ option(UseInternalZlib   "If set, use bundled zlib."    ${UseInternalZlibDefault
 option(UseInternalPNG    "If set, use bundled libpng."  ${UseInternalPNGDefault})
 option(UseInternalJPEG   "If set, use bundled libjpeg." ${UseInternalJPEGDefault})
 option(UseInternalSDL2   "If set, use bundled SDL2."    ${UseInternalSDL2Default})
+option(UseInternalRmlUi  "If set, use bundled RmlUi."   ${UseInternalRmlUiDefault})
 
 # This option won't appear on non-Apple platforms.
 if(APPLE)
@@ -410,6 +413,32 @@ endif()
 
 # Always use bundled minizip (sets MINIZIP_{LIBRARIES,INCLUDE_DIR})
 add_subdirectory(lib/minizip)
+
+if(BuildSPEngine OR BuildJK2SPEngine OR BuildMPEngine)
+	if(UseInternalRmlUi)
+		# Static, so like the other bundled libraries it adds nothing to install.
+		# The game's own bitmap fonts replace RmlUi's font engine, so FreeType isn't needed.
+		set(BUILD_SHARED_LIBS OFF)
+		set(RMLUI_FONT_ENGINE "none" CACHE STRING "" FORCE)
+		set(RMLUI_PRECOMPILED_HEADERS OFF)
+		set(RMLUI_COMPILER_OPTIONS OFF)
+		add_subdirectory(lib/RmlUi EXCLUDE_FROM_ALL)
+		unset(BUILD_SHARED_LIBS)
+	else()
+		find_package(RmlUi REQUIRED CONFIG)
+	endif()
+
+	set(RmlFiles
+		"${SharedDir}/rml/rml_ui.h"
+		"${SharedDir}/rml/rml_ui.cpp"
+		"${SharedDir}/rml/cl_rml.inl")
+	# the engine builds as C++11, RmlUi's headers need C++17
+	if(MSVC)
+		set(RmlCompileOption "/std:c++17")
+	else()
+		set(RmlCompileOption "-std=c++17")
+	endif()
+endif()
 
 # Add projects
 add_subdirectory(${SPDir})

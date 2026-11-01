@@ -9528,3 +9528,177 @@ static qboolean Menu_OverActiveItem(menuDef_t *menu, float x, float y) {
 	}
 	return qfalse;
 }
+
+#ifdef UI_BUILD
+/*
+=================
+Menu_RmlEvent
+
+Runs an item's event for the RmlUi menus. A click takes the same path as a
+mouse click over the item, so yes/no and multi items work too.
+=================
+*/
+void Menu_RmlEvent(const char *menuName, int index, const char *event, int x, int y)
+{
+	menuDef_t *menu = Menus_FindByName(menuName);
+	itemDef_t *item;
+
+	if (!menu || index < 0 || index >= menu->itemCount)
+	{
+		return;
+	}
+
+	item = menu->items[index];
+
+	if (!Q_stricmp(event, "mouseenter"))
+	{
+		Item_RunScript(item, item->mouseEnter);
+	}
+	else if (!Q_stricmp(event, "mouseexit"))
+	{
+		Item_RunScript(item, item->mouseExit);
+	}
+	else if (item->type == ITEM_TYPE_SLIDER && (!Q_stricmp(event, "press") || !Q_stricmp(event, "drag") || !Q_stricmp(event, "release")))
+	{
+		static qboolean sliderHeld;
+		const int cursorx = DC->cursorx, cursory = DC->cursory;
+		const int flags = item->window.flags;
+
+		DC->cursorx = x;
+		DC->cursory = y;
+		item->window.flags |= WINDOW_HASFOCUS;
+
+		if (!Q_stricmp(event, "press"))
+		{
+			// only a press on the bar grabs it, not one on the label
+			sliderHeld = Item_HandleKey(item, A_MOUSE1, qtrue);
+			Item_HandleKey(item, A_MOUSE1, qfalse);
+		}
+		else if (sliderHeld && !Q_stricmp(event, "drag"))
+		{
+			scrollInfo_t info;
+
+			memset(&info, 0, sizeof(info));
+			info.item = item;
+			Scroll_Slider_ThumbFunc(&info);
+		}
+		else if (sliderHeld)
+		{
+			sliderHeld = qfalse;
+			Item_Action(item);
+		}
+
+		item->window.flags = (item->window.flags & ~WINDOW_HASFOCUS) | (flags & WINDOW_HASFOCUS);
+		DC->cursorx = cursorx;
+		DC->cursory = cursory;
+	}
+	else
+	{
+		const int cursorx = DC->cursorx, cursory = DC->cursory;
+		const int flags = item->window.flags;
+		const int key = !Q_stricmp(event, "wheelup") ? A_MWHEELUP : !Q_stricmp(event, "wheeldown") ? A_MWHEELDOWN : A_MOUSE1;
+
+		if (Rect_ContainsPoint(&item->window.rect, x, y))
+		{
+			DC->cursorx = x;
+			DC->cursory = y;
+		}
+		else
+		{
+			DC->cursorx = (int)(item->window.rect.x + item->window.rect.w / 2);
+			DC->cursory = (int)(item->window.rect.y + item->window.rect.h / 2);
+		}
+		item->window.flags |= WINDOW_HASFOCUS;
+
+		if (item->type == ITEM_TYPE_LISTBOX)
+		{
+			Item_ListBox_MouseEnter(item, DC->cursorx, DC->cursory);
+		}
+
+		// Menu_HandleKey runs the action once the item has taken the key too
+		if ((Item_HandleKey(item, key, qtrue) || key == A_MOUSE1) && !item->disabled)
+		{
+			Item_Action(item);
+		}
+		Item_HandleKey(item, key, qfalse);
+
+		if (key == A_MOUSE1 && (item->type == ITEM_TYPE_EDITFIELD || item->type == ITEM_TYPE_NUMERICFIELD))
+		{
+			item->cursorPos = 0;
+			g_editingField = qtrue;
+			g_editItem = item;
+		}
+
+		item->window.flags = (item->window.flags & ~WINDOW_HASFOCUS) | (flags & WINDOW_HASFOCUS);
+		DC->cursorx = cursorx;
+		DC->cursory = cursory;
+	}
+}
+
+/*
+=================
+Menus_RmlPaint
+
+Paints the items RmlUi has no widget for yet, using their real data. RmlUi calls
+this as it reaches the menu's document, so menus above it still cover these items.
+=================
+*/
+void Menus_RmlPaint(const char *menuName)
+{
+	menuDef_t *menu = Menus_FindByName(menuName);
+	int i;
+
+	if (!menu || !(menu->window.flags & WINDOW_VISIBLE))
+	{
+		return;
+	}
+
+	for (i = 0; i < menu->itemCount; i++)
+	{
+		switch (menu->items[i]->type)
+		{
+			case ITEM_TYPE_LISTBOX:
+			case ITEM_TYPE_MODEL:
+			case ITEM_TYPE_OWNERDRAW:
+			case ITEM_TYPE_SLIDER:
+			case ITEM_TYPE_TEXTSCROLL:
+			case ITEM_TYPE_BIND:
+				Item_Paint(menu->items[i]);
+				break;
+			default:
+				break;
+		}
+	}
+}
+
+/*
+=================
+Menus_RmlSync
+
+Tells the client which menus are open. It's also sent on a timer, since the ui
+stops refreshing while no menu has the keyboard and a reopened menu looks unchanged.
+=================
+*/
+void Menus_RmlSync(void)
+{
+	static char last[1024];
+	static int nextTime;
+	char list[1024] = "rml_sync";
+	int i;
+
+	for (i = 0; i < menuCount; i++)
+	{
+		if (Menus[i].window.flags & WINDOW_VISIBLE)
+		{
+			Q_strcat(list, sizeof(list), va(" %s", Menus[i].window.name));
+		}
+	}
+
+	if (strcmp(list, last) || DC->realTime >= nextTime)
+	{
+		Q_strncpyz(last, list, sizeof(last));
+		nextTime = DC->realTime + 250;
+		DC->executeText(EXEC_NOW, va("%s\n", list));
+	}
+}
+#endif

@@ -1249,6 +1249,10 @@ void CL_KeyDownEvent( int key, unsigned time )
 //		key = A_ESCAPE;
 	}
 
+	if ( CL_RmlKeyEvent( key, qtrue ) ) {
+		return;
+	}
+
 	// escape is always handled special
 	if ( key == A_ESCAPE ) {
 		if ( !kg.keys[A_SHIFT].down && ( Key_GetCatcher( ) & KEYCATCH_CONSOLE ) ) {
@@ -1314,6 +1318,10 @@ void CL_KeyUpEvent( int key, unsigned time )
 	//
 	CL_ParseBinding( key, qfalse, time );
 
+	if ( CL_RmlKeyEvent( key, qfalse ) ) {
+		return;
+	}
+
 	if ( Key_GetCatcher( ) & KEYCATCH_UI )
 		_UI_KeyEvent( key, qfalse );
 }
@@ -1343,6 +1351,10 @@ void CL_CharEvent( int key ) {
 	// delete is not a printable character and is otherwise handled by Field_KeyDownEvent
 	if ( key == 127 )
 		return;
+
+	if ( CL_RmlCharEvent( key ) ) {
+		return;
+	}
 
 	// distribute the key down event to the apropriate handler
 		 if ( Key_GetCatcher() & KEYCATCH_CONSOLE )		Field_CharEvent( &g_consoleField, key );

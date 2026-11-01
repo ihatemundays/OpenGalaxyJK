@@ -1,0 +1,2625 @@
+[
+ {
+  "set": "Single player",
+  "menu_files": 38,
+  "menus": [
+   {
+    "file": "ui/character.menu",
+    "name": "characterMenu",
+    "items": 38,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 19,
+     "MODEL": 1,
+     "BUTTON": 13,
+     "MULTI": 1,
+     "LISTBOX": 4
+    }
+   },
+   {
+    "file": "ui/controls.menu",
+    "name": "controlsMenu",
+    "items": 93,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 17,
+     "BUTTON": 13,
+     "BIND": 52,
+     "YESNO": 7,
+     "SLIDER": 2,
+     "MULTI": 1,
+     "OWNERDRAW": 1
+    }
+   },
+   {
+    "file": "ui/datapadforcepowers.menu",
+    "name": "datapadForcePowersMenu",
+    "items": 16,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 8,
+     "OWNERDRAW": 1,
+     "BUTTON": 7
+    }
+   },
+   {
+    "file": "ui/datapadmission.menu",
+    "name": "datapadMissionMenu",
+    "items": 10,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 4,
+     "OWNERDRAW": 1,
+     "BUTTON": 5
+    }
+   },
+   {
+    "file": "ui/datapadmoves.menu",
+    "name": "datapadMovesMenu",
+    "items": 19,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 10,
+     "MULTI": 1,
+     "LISTBOX": 1,
+     "MODEL": 1,
+     "TEXTSCROLL": 1,
+     "BUTTON": 5
+    }
+   },
+   {
+    "file": "ui/datapadweapons.menu",
+    "name": "datapadWeaponsMenu",
+    "items": 18,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 10,
+     "OWNERDRAW": 1,
+     "BUTTON": 7
+    }
+   },
+   {
+    "file": "ui/error.menu",
+    "name": "error_popmenu",
+    "items": 5,
+    "rect": [
+     "158",
+     "80",
+     "320",
+     "320"
+    ],
+    "fullscreen": "0",
+    "popup": true,
+    "types": {
+     "TEXT": 4,
+     "BUTTON": 1
+    }
+   },
+   {
+    "file": "ui/ingame.menu",
+    "name": "ingameMainMenu",
+    "items": 19,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 13,
+     "BUTTON": 6
+    }
+   },
+   {
+    "file": "ui/ingamecontrols.menu",
+    "name": "ingameControlsMenu",
+    "items": 114,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 37,
+     "BUTTON": 14,
+     "BIND": 52,
+     "YESNO": 7,
+     "SLIDER": 2,
+     "MULTI": 1,
+     "OWNERDRAW": 1
+    }
+   },
+   {
+    "file": "ui/ingameforcehelp.menu",
+    "name": "ingameForceHelp",
+    "items": 5,
+    "rect": [
+     "140",
+     "70",
+     "350",
+     "375"
+    ],
+    "fullscreen": "0",
+    "popup": true,
+    "types": {
+     "TEXT": 3,
+     "TEXTSCROLL": 1,
+     "BUTTON": 1
+    }
+   },
+   {
+    "file": "ui/ingameforceselect.menu",
+    "name": "ingameForceSelect",
+    "items": 116,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 48,
+     "BUTTON": 19,
+     "TEXTSCROLL": 49
+    }
+   },
+   {
+    "file": "ui/ingameforcestatus.menu",
+    "name": "ingameForceStatus",
+    "items": 34,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 29,
+     "MODEL": 2,
+     "BUTTON": 3
+    }
+   },
+   {
+    "file": "ui/ingamegototier.menu",
+    "name": "ingameGotoTier",
+    "items": 41,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 9,
+     "EDITFIELD": 23,
+     "MODEL": 3,
+     "BUTTON": 3,
+     "TEXTSCROLL": 3
+    }
+   },
+   {
+    "file": "ui/ingameload.menu",
+    "name": "ingameloadMenu",
+    "items": 30,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 17,
+     "BUTTON": 11,
+     "LISTBOX": 1,
+     "OWNERDRAW": 1
+    }
+   },
+   {
+    "file": "ui/ingamemissionselect.menu",
+    "name": "ingameMissionSelect",
+    "items": 116,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 26,
+     "EDITFIELD": 23,
+     "MODEL": 19,
+     "BUTTON": 33,
+     "TEXTSCROLL": 15
+    }
+   },
+   {
+    "file": "ui/ingamemissionselect1.menu",
+    "name": "ingameMissionSelect1",
+    "items": 47,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 30,
+     "BUTTON": 12,
+     "TEXTSCROLL": 2,
+     "MODEL": 3
+    }
+   },
+   {
+    "file": "ui/ingamemissionselect2.menu",
+    "name": "ingameMissionSelect2",
+    "items": 50,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 28,
+     "MODEL": 4,
+     "BUTTON": 12,
+     "TEXTSCROLL": 6
+    }
+   },
+   {
+    "file": "ui/ingamemissionselect3.menu",
+    "name": "ingameMissionSelect3",
+    "items": 46,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 30,
+     "MODEL": 3,
+     "BUTTON": 12,
+     "TEXTSCROLL": 1
+    }
+   },
+   {
+    "file": "ui/ingamequit.menu",
+    "name": "ingamequitMenu",
+    "items": 32,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 19,
+     "BUTTON": 13
+    }
+   },
+   {
+    "file": "ui/ingamesave.menu",
+    "name": "ingamesaveMenu",
+    "items": 30,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 18,
+     "BUTTON": 9,
+     "EDITFIELD": 1,
+     "LISTBOX": 1,
+     "OWNERDRAW": 1
+    }
+   },
+   {
+    "file": "ui/ingamesetup.menu",
+    "name": "ingameSetupMenu",
+    "items": 97,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 41,
+     "BUTTON": 21,
+     "MULTI": 29,
+     "SLIDER": 5,
+     "LISTBOX": 1
+    }
+   },
+   {
+    "file": "ui/ingamevid_warning.menu",
+    "name": "ingamevideowarningMenu",
+    "items": 8,
+    "rect": [
+     "100",
+     "120",
+     "440",
+     "320"
+    ],
+    "fullscreen": "1",
+    "popup": true,
+    "types": {
+     "TEXT": 6,
+     "BUTTON": 2
+    }
+   },
+   {
+    "file": "ui/ingamewpnselect.menu",
+    "name": "ingameWpnSelect",
+    "items": 81,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 57,
+     "TEXTSCROLL": 2,
+     "BUTTON": 22
+    }
+   },
+   {
+    "file": "ui/ingamewpnselecthelp.menu",
+    "name": "ingameWpnSelectHelp",
+    "items": 5,
+    "rect": [
+     "140",
+     "70",
+     "350",
+     "375"
+    ],
+    "fullscreen": "0",
+    "popup": true,
+    "types": {
+     "TEXT": 3,
+     "TEXTSCROLL": 1,
+     "BUTTON": 1
+    }
+   },
+   {
+    "file": "ui/loadgame.menu",
+    "name": "loadgameMenu",
+    "items": 28,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 17,
+     "BUTTON": 9,
+     "LISTBOX": 1,
+     "OWNERDRAW": 1
+    }
+   },
+   {
+    "file": "ui/loadscreen.menu",
+    "name": "loadscreen",
+    "items": 11,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "0",
+    "popup": false,
+    "types": {
+     "TEXT": 10,
+     "TEXTSCROLL": 1
+    }
+   },
+   {
+    "file": "ui/main.menu",
+    "name": "mainMenu",
+    "items": 19,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 10,
+     "BUTTON": 9
+    }
+   },
+   {
+    "file": "ui/missionfailed.menu",
+    "name": "missionfailed_menu",
+    "items": 11,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "0",
+    "popup": false,
+    "types": {
+     "TEXT": 5,
+     "BUTTON": 6
+    }
+   },
+   {
+    "file": "ui/newgame.menu",
+    "name": "newgameMenu",
+    "items": 30,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 19,
+     "BUTTON": 11
+    }
+   },
+   {
+    "file": "ui/newgame_first.menu",
+    "name": "newgamefirstMenu",
+    "items": 39,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 24,
+     "BUTTON": 15
+    }
+   },
+   {
+    "file": "ui/quit.menu",
+    "name": "quitMenu",
+    "items": 21,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 15,
+     "BUTTON": 6
+    }
+   },
+   {
+    "file": "ui/saber.menu",
+    "name": "saberMenu",
+    "items": 60,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 33,
+     "BUTTON": 21,
+     "MULTI": 4,
+     "MODEL": 2
+    }
+   },
+   {
+    "file": "ui/sabercolor.menu",
+    "name": "sabercolor",
+    "items": 4,
+    "rect": [
+     "245",
+     "57",
+     "200",
+     "370"
+    ],
+    "fullscreen": "0",
+    "popup": false,
+    "types": {
+     "TEXT": 2,
+     "MULTI": 2
+    }
+   },
+   {
+    "file": "ui/saberstyle.menu",
+    "name": "saberstyleMenu",
+    "items": 15,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 9,
+     "MULTI": 2,
+     "TEXTSCROLL": 2,
+     "MODEL": 1,
+     "BUTTON": 1
+    }
+   },
+   {
+    "file": "ui/setup.menu",
+    "name": "setupMenu",
+    "items": 102,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 48,
+     "BUTTON": 19,
+     "MULTI": 29,
+     "SLIDER": 5,
+     "LISTBOX": 1
+    }
+   },
+   {
+    "file": "ui/vid_warning.menu",
+    "name": "videowarningMenu",
+    "items": 8,
+    "rect": [
+     "100",
+     "120",
+     "440",
+     "320"
+    ],
+    "fullscreen": "1",
+    "popup": true,
+    "types": {
+     "TEXT": 6,
+     "BUTTON": 2
+    }
+   },
+   {
+    "file": "ui/videodriver.menu",
+    "name": "videodriverMenu",
+    "items": 4,
+    "rect": [
+     "100",
+     "120",
+     "440",
+     "320"
+    ],
+    "fullscreen": "0",
+    "popup": true,
+    "types": {
+     "TEXT": 2,
+     "BUTTON": 1,
+     "OWNERDRAW": 1
+    }
+   }
+  ],
+  "item_types": {
+   "TEXT": 686,
+   "MODEL": 39,
+   "BUTTON": 345,
+   "MULTI": 70,
+   "LISTBOX": 10,
+   "BIND": 104,
+   "YESNO": 14,
+   "SLIDER": 14,
+   "OWNERDRAW": 9,
+   "TEXTSCROLL": 84,
+   "EDITFIELD": 47
+  },
+  "script_verbs": {
+   "uiscript": 244,
+   "hide": 1201,
+   "show": 958,
+   "play": 459,
+   "close": 155,
+   "open": 143,
+   "transition2": 144,
+   "setitemcolor": 424,
+   "setcvar": 100,
+   "fadein": 34,
+   "setitemrect": 217,
+   "exec": 11,
+   "setfocus": 35,
+   "stopvoice": 4,
+   "setitembackground": 34,
+   "setitemtext": 64,
+   "playvoice": 32,
+   "fadeout": 33,
+   "defer": 18,
+   "activate": 1,
+   "transition": 21,
+   "rundeferred": 1
+  },
+  "ui_scripts": {
+   "getcharcvars": 1,
+   "character": 1,
+   "characterchanged": 1,
+   "resetcharacterlistboxes": 1,
+   "char_skin": 3,
+   "updatecharcvars": 1,
+   "loadControls": 2,
+   "saveControls": 2,
+   "update": 14,
+   "nextDataPadForcePower": 2,
+   "closedatapad": 8,
+   "prevDataPadForcePower": 1,
+   "setMoveCharacter": 1,
+   "resetMovesDesc": 4,
+   "setMovesListDefault": 1,
+   "resetMovesList": 1,
+   "nextDataPadWeapon": 2,
+   "prevDataPadWeapon": 1,
+   "clearError": 1,
+   "closeingame": 9,
+   "initallocforcepower": 24,
+   "forcehelpactive": 1,
+   "decrementcurrentforcepower": 1,
+   "affectforcepowerlevel": 8,
+   "showforceleveldesc": 16,
+   "calcforcestatus": 1,
+   "startmap": 4,
+   "loadmissionselectmenu": 2,
+   "ReadSaveDirectory": 3,
+   "loadgame": 4,
+   "deletegame": 3,
+   "loadAuto": 2,
+   "Leave": 1,
+   "Quit": 2,
+   "savegame": 1,
+   "getvideosetup": 4,
+   "loadMods": 2,
+   "glCustom": 18,
+   "updatevideosetup": 3,
+   "RunMod": 2,
+   "clearmouseover": 2,
+   "resetdefaults": 2,
+   "getvid1data": 1,
+   "setvid1data": 1,
+   "initweaponselect": 1,
+   "clearweapons": 1,
+   "clearinventory": 1,
+   "giveweapon": 2,
+   "equipweapon": 1,
+   "addweaponselection": 8,
+   "addthrowweaponselection": 3,
+   "removeweaponselection": 2,
+   "highlightweaponselection": 2,
+   "normalweaponselection": 2,
+   "removethrowweaponselection": 1,
+   "highlightthrowselection": 1,
+   "normalthrowselection": 1,
+   "load_auto": 1,
+   "load_quick": 1,
+   "decrementforcepowerlevel": 3,
+   "resetsabercvardefaults": 1,
+   "getsabercvars": 2,
+   "updatefightingstylechoices": 5,
+   "saber_hilt": 7,
+   "saber_color": 6,
+   "saber2_hilt": 5,
+   "saber2_color": 5,
+   "updatesabercvars": 9,
+   "closesabermenu": 1,
+   "saber_type": 3,
+   "updatefightingstyle": 3,
+   "startgame": 1
+  },
+  "ownerdraws": {
+   "250": 2,
+   "206": 1,
+   "203": 1,
+   "204": 1,
+   "236": 3,
+   "249": 1
+  },
+  "feeders": {
+   "16": 1,
+   "20": 1,
+   "17": 1,
+   "18": 1,
+   "19": 1,
+   "22": 1,
+   "21": 1,
+   "FEEDER_SAVEGAMES": 3,
+   "23": 2,
+   "9": 2
+  },
+  "cvars": {
+   "saber_menu": 1,
+   "ui_saber_type": 4,
+   "ui_char_model": 1,
+   "+forward": 2,
+   "+back": 2,
+   "+left": 2,
+   "+right": 2,
+   "+speed": 2,
+   "+moveleft": 2,
+   "+moveright": 2,
+   "+strafe": 2,
+   "+moveup": 2,
+   "+movedown": 2,
+   "+attack": 2,
+   "+altattack": 2,
+   "saberAttackCycle": 2,
+   "+use": 2,
+   "+lookup": 2,
+   "+lookdown": 2,
+   "+mlook": 2,
+   "centerview": 2,
+   "weapon 1": 2,
+   "weapon 2": 2,
+   "weapon 3": 2,
+   "weapon 4": 2,
+   "weapon 5": 2,
+   "weapon 6": 2,
+   "weapon 7": 2,
+   "weapon 8": 2,
+   "weapon 13": 2,
+   "weapon 9": 2,
+   "weapon 10": 2,
+   "weapnext": 2,
+   "weapprev": 2,
+   "force_throw": 2,
+   "force_pull": 2,
+   "force_speed": 2,
+   "force_sight": 2,
+   "force_absorb": 2,
+   "force_heal": 2,
+   "force_distract": 2,
+   "force_protect": 2,
+   "+force_drain": 2,
+   "+force_grip": 2,
+   "+force_lightning": 2,
+   "force_rage": 2,
+   "+useforce": 2,
+   "forcenext": 2,
+   "forceprev": 2,
+   "datapad": 2,
+   "uimenu ingamesavemenu": 2,
+   "uimenu ingameloadmenu": 2,
+   "save quick": 2,
+   "load quick": 2,
+   "ui_mousePitch": 2,
+   "m_filter": 2,
+   "in_joystick": 2,
+   "joy_xbutton": 2,
+   "joy_ybutton": 2,
+   "use_ff": 2,
+   "cl_run": 2,
+   "cg_autoswitch": 2,
+   "cg_thirdperson !": 2,
+   "ui_movesflag": 1,
+   "ui_move_title": 3,
+   "ui_move_desc": 1,
+   "com_errorMessage": 1,
+   "ui_stats_enemieskilled": 2,
+   "ui_stats_secretsfound": 2,
+   "ui_stats_thrown": 2,
+   "ui_stats_blocks": 2,
+   "ui_stats_legattacks": 2,
+   "ui_stats_armattacks": 2,
+   "ui_stats_bodyattacks": 2,
+   "ui_stats_absorb": 2,
+   "ui_stats_heal": 2,
+   "ui_stats_mindtrick": 2,
+   "ui_stats_protect": 2,
+   "ui_stats_jump": 2,
+   "ui_stats_pull": 2,
+   "ui_stats_push": 2,
+   "ui_stats_sense": 2,
+   "ui_stats_speed": 2,
+   "ui_stats_defense": 2,
+   "ui_stats_offense": 2,
+   "ui_stats_throw": 2,
+   "ui_stats_drain": 2,
+   "ui_stats_grip": 2,
+   "ui_stats_lightning": 2,
+   "ui_stats_rage": 2,
+   "tier_mapname": 15,
+   "ui_gameDesc": 1,
+   "ui_r_modified": 21,
+   "ui_r_glCustom": 2,
+   "ui_r_mode": 2,
+   "ui_r_colorbits": 2,
+   "ui_r_fullscreen": 2,
+   "ui_r_lodbias": 2,
+   "ui_r_picmip": 2,
+   "ui_r_texturebits": 2,
+   "ui_r_texturemode": 2,
+   "ui_r_detailtextures": 2,
+   "r_swapInterval": 2,
+   "ui_r_ext_compress_textures": 2,
+   "cg_shadows": 2,
+   "r_dynamiclight": 2,
+   "r_dynamicglow": 2,
+   "r_flares": 2,
+   "cg_marks": 2,
+   "s_khz": 2,
+   "s_UseOpenAL": 2,
+   "cg_drawcrosshair": 2,
+   "cg_crosshairIdentifyTarget": 2,
+   "d_slowmodeath": 2,
+   "cg_gunAutoFirst": 2,
+   "cg_footsteps": 2,
+   "g_dismemberment": 2,
+   "ui_disableWeaponSway": 4,
+   "se_language": 2,
+   "s_language": 2,
+   "g_subtitles": 2,
+   "ui_missionbriefing": 1,
+   "ui_missionfailed": 2,
+   "cl_paused": 4,
+   "ui_missionfailed_text": 1,
+   "g_spskill": 10,
+   "cg_crosshairForceHint": 10,
+   "handicap": 10,
+   "ui_saber": 5,
+   "ui_saber2": 4,
+   "ui_saber_color": 6,
+   "ui_saber2_color": 6,
+   "tier_storyinfo": 2,
+   "storyhead": 2,
+   "ui_newfightingstyle": 2,
+   "ui_currentfightingstyle": 1
+  },
+  "art": {
+   "gfx/menus/main_centerblue": 13,
+   "gfx/menus/menu_side_text": 14,
+   "gfx/menus/menu_side_text_right": 14,
+   "gfx/menus/charmenu": 1,
+   "gfx/menus/menu_boxes_left": 14,
+   "gfx/menus/menu_boxes_right": 14,
+   "gfx/menus/menu_blendbox": 63,
+   "gfx/menus/charmenu_bottom": 1,
+   "gfx/menus/menu_buttonback": 131,
+   "gfx/menus/main_background": 13,
+   "gfx/menus/jediacademy": 13,
+   "gfx/menus/menu_blendbox2": 14,
+   "gfx/menus/datapad": 3,
+   "gfx/menus/dp_arrow_lon": 2,
+   "gfx/menus/dp_arrow_l": 2,
+   "gfx/menus/dp_arrow_ron": 2,
+   "gfx/menus/dp_arrow_r": 3,
+   "gfx/menus/scanlines": 12,
+   "gfx/menus/datapad2": 1,
+   "gfx/menus/forcemenu_back": 1,
+   "gfx/menus/hex_pattern_1": 1,
+   "gfx/menus/hex_pattern_2": 1,
+   "gfx/menus/hex_pattern_3": 1,
+   "gfx/menus/hex_pattern_1_gold": 1,
+   "gfx/menus/hex_pattern_2_gold": 1,
+   "gfx/menus/hex_pattern_3_gold": 1,
+   "gfx/menus/hex_pattern_0": 24,
+   "gfx/mp/NEW_f_icon_lt_absorb": 2,
+   "gfx/mp/NEW_f_icon_lt_heal": 2,
+   "gfx/mp/NEW_f_icon_lt_mind_trick": 2,
+   "gfx/mp/NEW_f_icon_lt_protect": 2,
+   "gfx/mp/NEW_f_icon_jump": 1,
+   "gfx/mp/NEW_f_icon_pull": 1,
+   "gfx/mp/NEW_f_icon_push": 1,
+   "gfx/mp/NEW_f_icon_sight": 2,
+   "gfx/mp/NEW_f_icon_speed": 1,
+   "gfx/mp/NEW_f_icon_saber_defend": 1,
+   "gfx/mp/NEW_f_icon_saber_attack": 1,
+   "gfx/mp/NEW_f_icon_saber_throw": 1,
+   "gfx/mp/NEW_f_icon_dk_drain": 2,
+   "gfx/mp/NEW_f_icon_dk_grip": 2,
+   "gfx/mp/NEW_f_icon_dk_l1": 2,
+   "gfx/mp/NEW_f_icon_dk_rage": 2,
+   "gfx/menus/mission_back": 7,
+   "gfx/menus/mission_bottomleft_grid": 5,
+   "gfx/menus/mission_bottom_left": 5,
+   "gfx/menus/static": 3,
+   "gfx/menus/star_field": 3,
+   "gfx/menus/star_field_zoom": 3,
+   "gfx/menus/planets/tatooine": 1,
+   "gfx/menus/planets/bakura": 1,
+   "gfx/menus/planets/blenjeel": 1,
+   "gfx/menus/planets/core": 1,
+   "gfx/menus/mission_galaxy": 3,
+   "gfx/menus/mission_loc_but_off": 15,
+   "gfx/menus/mission_loc_but_on": 15,
+   "gfx/menus/planets/krildor": 1,
+   "gfx/menus/planets/narkreeta": 1,
+   "gfx/menus/planets/dosuun": 1,
+   "gfx/menus/planets/zonju": 1,
+   "gfx/menus/planets/coruscant": 1,
+   "gfx/menus/planets/yalara": 2,
+   "gfx/menus/planets/chandrila": 1,
+   "gfx/menus/planets/ordman": 1,
+   "gfx/menus/planets/tanaab": 1,
+   "gfx/menus/planets/byss": 1,
+   "gfx/menus/greyscale": 2,
+   "gfx/menus/eax": 2,
+   "gfx/menus/menu_boxred": 3,
+   "gfx/menus/weaponmenu_back": 1,
+   "gfx/menus/hex_pattern_gray": 18,
+   "gfx/hud/w_icon_lightsaber_na": 2,
+   "gfx/hud/w_icon_lightsaber": 1,
+   "gfx/hud/w_icon_blaster_pistol_na": 5,
+   "gfx/hud/w_icon_blaster_pistol": 1,
+   "gfx/hud/w_icon_blaster_na": 1,
+   "gfx/hud/w_icon_blaster": 1,
+   "gfx/hud/w_icon_disruptor_na": 1,
+   "gfx/hud/w_icon_disruptor": 1,
+   "gfx/hud/w_icon_bowcaster_na": 1,
+   "gfx/hud/w_icon_bowcaster": 1,
+   "gfx/hud/w_icon_demp2_na": 1,
+   "gfx/hud/w_icon_demp2": 1,
+   "gfx/hud/w_icon_repeater_na": 1,
+   "gfx/hud/w_icon_repeater": 1,
+   "gfx/hud/w_icon_flechette_na": 1,
+   "gfx/hud/w_icon_flechette": 1,
+   "gfx/hud/w_icon_c_rifle_na": 1,
+   "gfx/hud/w_icon_c_rifle": 1,
+   "gfx/hud/w_icon_merrsonn_na": 1,
+   "gfx/hud/w_icon_merrsonn": 1,
+   "gfx/hud/w_icon_thermal_na": 1,
+   "gfx/hud/w_icon_thermal": 1,
+   "gfx/hud/w_icon_detpack_na": 1,
+   "gfx/hud/w_icon_detpack": 1,
+   "gfx/hud/w_icon_tripmine_na": 1,
+   "gfx/hud/w_icon_tripmine": 1,
+   "gfx/menus/load_back": 1,
+   "gfx/menus/scanlines_noscroll": 1,
+   "gfx/menus/videologo": 2,
+   "gfx/menus/main_ring": 1,
+   "gfx/menus/main_centerwindow": 2,
+   "gfx/menus/main_leftwindow": 2,
+   "gfx/menus/main_rightwindow": 2,
+   "gfx/menus/menu_rotate_ring_b": 1,
+   "gfx/menus/sabermenu_back": 2,
+   "gfx/menus/sabermenu_box": 1,
+   "gfx/menus/sabermenu_box_top": 2,
+   "gfx/menus/sabermenu_box_middle": 2,
+   "gfx/menus/sabermenu_box_bottom": 2,
+   "gfx/menus/sabermenu_stylebox_left": 3,
+   "gfx/menus/sabermenu_stylebox_right": 3,
+   "gfx/menus/saber_icon_blue": 2,
+   "gfx/menus/saber_icon_green": 2,
+   "gfx/menus/saber_icon_orange": 2,
+   "gfx/menus/saber_icon_purple": 2,
+   "gfx/menus/saber_icon_yellow": 2
+  },
+  "models": {
+   "ui_char_model": 2,
+   "models/players/luke/model.glm": 9,
+   "models/players/kyle/model.glm": 17,
+   "models/players/protocol/model.glm": 6,
+   "models/players/rebel_pilot/model.glm": 2,
+   "models/weapons2/saber_1/saber_1.glm": 2,
+   "models/weapons2/saber_reborn/saber_w.glm": 1
+  },
+  "sounds": {
+   "sound/interface/esc.wav": 44,
+   "sound/interface/button1.wav": 193,
+   "sound/interface/choose_color.wav": 1,
+   "sound/interface/choose_head.wav": 2,
+   "sound/interface/choose_torso.wav": 1,
+   "sound/weapons/saber/saberoff.mp3": 12,
+   "sound/interface/sub_select": 28,
+   "sound/interface/button1": 124,
+   "sound/misc/nomenu.wav": 9,
+   "sound/interface/menuroam.wav": 13,
+   "sound/weapons/force/protect.wav": 15,
+   "sound/interface/transition.wav": 1,
+   "sound/interface/choose_saber.wav": 3,
+   "sound/interface/choose_hilt.wav": 3,
+   "sound/interface/choose_blade.wav": 10
+  },
+  "art_not_plain_images": [
+   "gfx/menus/menu_blendbox2",
+   "gfx/menus/planets/bakura",
+   "gfx/menus/planets/blenjeel",
+   "gfx/menus/planets/byss",
+   "gfx/menus/planets/chandrila",
+   "gfx/menus/planets/core",
+   "gfx/menus/planets/coruscant",
+   "gfx/menus/planets/dosuun",
+   "gfx/menus/planets/krildor",
+   "gfx/menus/planets/narkreeta",
+   "gfx/menus/planets/ordman",
+   "gfx/menus/planets/tanaab",
+   "gfx/menus/planets/tatooine",
+   "gfx/menus/planets/yalara",
+   "gfx/menus/planets/zonju",
+   "gfx/menus/scanlines_noscroll",
+   "gfx/menus/videologo"
+  ],
+  "warnings": [
+   "ui/hud.menu: line 54: unknown top-level 'itemDef'",
+   "ui/hud.menu: line 55: unknown top-level '{'",
+   "ui/hud.menu: line 56: unknown top-level 'name'",
+   "ui/hud.menu: line 56: unknown top-level 'health_tic2'",
+   "ui/hud.menu: line 57: unknown top-level 'background'",
+   "ui/hud.menu: line 57: unknown top-level 'gfx/hud/health_tic_2'",
+   "ui/hud.menu: line 58: unknown top-level 'forecolor'",
+   "ui/hud.menu: line 58: unknown top-level '1'",
+   "ui/hud.menu: line 58: unknown top-level '1'",
+   "ui/hud.menu: line 58: unknown top-level '1'",
+   "ui/hud.menu: line 58: unknown top-level '1'",
+   "ui/hud.menu: line 59: unknown top-level 'rect'",
+   "ui/hud.menu: line 59: unknown top-level '38'",
+   "ui/hud.menu: line 59: unknown top-level '33'",
+   "ui/hud.menu: line 59: unknown top-level '28'",
+   "ui/hud.menu: line 59: unknown top-level '28'",
+   "ui/missionfailed.menu: line 24: unknown keyword '1'"
+  ]
+ },
+ {
+  "set": "Multiplayer UI",
+  "menu_files": 49,
+  "menus": [
+   {
+    "file": "ui/jamp/advancedcreateserver.menu",
+    "name": "advancedcreateserver",
+    "items": 46,
+    "rect": [
+     "40",
+     "50",
+     "560",
+     "380"
+    ],
+    "fullscreen": "MENU_FALSE",
+    "popup": true,
+    "types": {
+     "TEXT": 25,
+     "YESNO": 12,
+     "OWNERDRAW": 1,
+     "MULTI": 2,
+     "EDITFIELD": 1,
+     "NUMERICFIELD": 4,
+     "BUTTON": 1
+    }
+   },
+   {
+    "file": "ui/jamp/connect.menu",
+    "name": "Connect",
+    "items": 1,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "MENU_FALSE",
+    "popup": false,
+    "types": {
+     "TEXT": 1
+    }
+   },
+   {
+    "file": "ui/jamp/controls.menu",
+    "name": "controlsMenu",
+    "items": 127,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 40,
+     "BUTTON": 13,
+     "BIND": 63,
+     "YESNO": 7,
+     "SLIDER": 2,
+     "MULTI": 1,
+     "OWNERDRAW": 1
+    }
+   },
+   {
+    "file": "ui/jamp/createfavorite.menu",
+    "name": "createfavorite_popmenu",
+    "items": 7,
+    "rect": [
+     "200",
+     "150",
+     "240",
+     "180"
+    ],
+    "fullscreen": "0",
+    "popup": true,
+    "types": {
+     "TEXT": 5,
+     "EDITFIELD": 1,
+     "BUTTON": 1
+    }
+   },
+   {
+    "file": "ui/jamp/createserver.menu",
+    "name": "createserver",
+    "items": 87,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "MENU_TRUE",
+    "popup": false,
+    "types": {
+     "TEXT": 39,
+     "OWNERDRAW": 35,
+     "EDITFIELD": 1,
+     "NUMERICFIELD": 6,
+     "YESNO": 2,
+     "LISTBOX": 1,
+     "BUTTON": 3
+    }
+   },
+   {
+    "file": "ui/jamp/demo.menu",
+    "name": "demo",
+    "items": 24,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "MENU_TRUE",
+    "popup": false,
+    "types": {
+     "TEXT": 15,
+     "BUTTON": 8,
+     "LISTBOX": 1
+    }
+   },
+   {
+    "file": "ui/jamp/error.menu",
+    "name": "error_popmenu",
+    "items": 5,
+    "rect": [
+     "158",
+     "80",
+     "320",
+     "320"
+    ],
+    "fullscreen": "0",
+    "popup": true,
+    "types": {
+     "TEXT": 4,
+     "BUTTON": 1
+    }
+   },
+   {
+    "file": "ui/jamp/findplayer.menu",
+    "name": "findplayer_popmenu",
+    "items": 13,
+    "rect": [
+     "125",
+     "60",
+     "390",
+     "360"
+    ],
+    "fullscreen": "0",
+    "popup": true,
+    "types": {
+     "TEXT": 7,
+     "EDITFIELD": 1,
+     "LISTBOX": 2,
+     "BUTTON": 3
+    }
+   },
+   {
+    "file": "ui/jamp/ingame.menu",
+    "name": "ingame",
+    "items": 24,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "0",
+    "popup": false,
+    "types": {
+     "TEXT": 12,
+     "BUTTON": 12
+    }
+   },
+   {
+    "file": "ui/jamp/ingame_about.menu",
+    "name": "ingame_about",
+    "items": 12,
+    "rect": [
+     "10",
+     "40",
+     "380",
+     "280"
+    ],
+    "fullscreen": "0",
+    "popup": false,
+    "types": {
+     "TEXT": 1,
+     "EDITFIELD": 10,
+     "MULTI": 1
+    }
+   },
+   {
+    "file": "ui/jamp/ingame_addbot.menu",
+    "name": "ingame_addbot",
+    "items": 6,
+    "rect": [
+     "105",
+     "40",
+     "240",
+     "128"
+    ],
+    "fullscreen": "0",
+    "popup": false,
+    "types": {
+     "TEXT": 2,
+     "OWNERDRAW": 3,
+     "BUTTON": 1
+    }
+   },
+   {
+    "file": "ui/jamp/ingame_callvote.menu",
+    "name": "ingame_callvote",
+    "items": 23,
+    "rect": [
+     "270",
+     "40",
+     "360",
+     "216"
+    ],
+    "fullscreen": "0",
+    "popup": false,
+    "types": {
+     "TEXT": 9,
+     "BUTTON": 10,
+     "OWNERDRAW": 2,
+     "LISTBOX": 2
+    }
+   },
+   {
+    "file": "ui/jamp/ingame_controls.menu",
+    "name": "ingame_controls",
+    "items": 109,
+    "rect": [
+     "45",
+     "35",
+     "550",
+     "335"
+    ],
+    "fullscreen": "0",
+    "popup": false,
+    "types": {
+     "TEXT": 27,
+     "BUTTON": 7,
+     "BIND": 63,
+     "YESNO": 8,
+     "SLIDER": 2,
+     "MULTI": 1,
+     "OWNERDRAW": 1
+    }
+   },
+   {
+    "file": "ui/jamp/ingame_join.menu",
+    "name": "ingame_join",
+    "items": 13,
+    "rect": [
+     "55",
+     "40",
+     "128",
+     "128"
+    ],
+    "fullscreen": "0",
+    "popup": false,
+    "types": {
+     "TEXT": 5,
+     "BUTTON": 8
+    }
+   },
+   {
+    "file": "ui/jamp/ingame_leave.menu",
+    "name": "ingame_leave",
+    "items": 16,
+    "rect": [
+     "474",
+     "40",
+     "156",
+     "100"
+    ],
+    "fullscreen": "0",
+    "popup": false,
+    "types": {
+     "TEXT": 7,
+     "BUTTON": 9
+    }
+   },
+   {
+    "file": "ui/jamp/ingame_objectives.menu",
+    "name": "ingame_objectives",
+    "items": 108,
+    "rect": [
+     "0",
+     "0",
+     "322",
+     "480"
+    ],
+    "fullscreen": "0",
+    "popup": false,
+    "types": {
+     "TEXT": 91,
+     "BUTTON": 17
+    }
+   },
+   {
+    "file": "ui/jamp/ingame_orders.menu",
+    "name": "ingame_orders",
+    "items": 13,
+    "rect": [
+     "45",
+     "30",
+     "200",
+     "240"
+    ],
+    "fullscreen": "0",
+    "popup": false,
+    "types": {
+     "TEXT": 1,
+     "OWNERDRAW": 1,
+     "BUTTON": 11
+    }
+   },
+   {
+    "file": "ui/jamp/ingame_player.menu",
+    "name": "ingame_player",
+    "items": 45,
+    "rect": [
+     "20",
+     "25",
+     "600",
+     "440"
+    ],
+    "fullscreen": "0",
+    "popup": false,
+    "types": {
+     "TEXT": 29,
+     "EDITFIELD": 1,
+     "OWNERDRAW": 6,
+     "LISTBOX": 1,
+     "BUTTON": 8
+    }
+   },
+   {
+    "file": "ui/jamp/ingame_player2.menu",
+    "name": "ingame_player2",
+    "items": 22,
+    "rect": [
+     "105",
+     "40",
+     "430",
+     "425"
+    ],
+    "fullscreen": "0",
+    "popup": false,
+    "types": {
+     "TEXT": 8,
+     "MODEL": 1,
+     "BUTTON": 8,
+     "MULTI": 1,
+     "LISTBOX": 4
+    }
+   },
+   {
+    "file": "ui/jamp/ingame_playerforce.menu",
+    "name": "ingame_playerforce",
+    "items": 57,
+    "rect": [
+     "105",
+     "40",
+     "430",
+     "425"
+    ],
+    "fullscreen": "0",
+    "popup": false,
+    "types": {
+     "TEXT": 30,
+     "OWNERDRAW": 21,
+     "LISTBOX": 1,
+     "EDITFIELD": 1,
+     "BUTTON": 4
+    }
+   },
+   {
+    "file": "ui/jamp/ingame_saber.menu",
+    "name": "ingame_saber",
+    "items": 36,
+    "rect": [
+     "105",
+     "40",
+     "430",
+     "425"
+    ],
+    "fullscreen": "0",
+    "popup": false,
+    "types": {
+     "TEXT": 14,
+     "BUTTON": 16,
+     "LISTBOX": 4,
+     "MODEL": 2
+    }
+   },
+   {
+    "file": "ui/jamp/ingame_setup.menu",
+    "name": "ingame_setup",
+    "items": 82,
+    "rect": [
+     "45",
+     "35",
+     "550",
+     "335"
+    ],
+    "fullscreen": "0",
+    "popup": false,
+    "types": {
+     "TEXT": 38,
+     "BUTTON": 11,
+     "MULTI": 28,
+     "SLIDER": 5
+    }
+   },
+   {
+    "file": "ui/jamp/ingame_siegeobjectives.menu",
+    "name": "ingame_siegeobjectives",
+    "items": 39,
+    "rect": [
+     "15",
+     "40",
+     "610",
+     "425"
+    ],
+    "fullscreen": "0",
+    "popup": false,
+    "types": {
+     "TEXT": 31,
+     "BUTTON": 8
+    }
+   },
+   {
+    "file": "ui/jamp/ingame_voicechat.menu",
+    "name": "ingame_voicechat",
+    "items": 45,
+    "rect": [
+     "10",
+     "100",
+     "180",
+     "260"
+    ],
+    "fullscreen": "0",
+    "popup": false,
+    "types": {
+     "TEXT": 3,
+     "EDITFIELD": 7,
+     "OWNERDRAW": 34,
+     "BUTTON": 1
+    }
+   },
+   {
+    "file": "ui/jamp/ingame_vote.menu",
+    "name": "ingame_vote",
+    "items": 5,
+    "rect": [
+     "430",
+     "40",
+     "80",
+     "68"
+    ],
+    "fullscreen": "0",
+    "popup": false,
+    "types": {
+     "TEXT": 3,
+     "BUTTON": 2
+    }
+   },
+   {
+    "file": "ui/jamp/joinserver.menu",
+    "name": "joinserver",
+    "items": 48,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 24,
+     "BUTTON": 16,
+     "OWNERDRAW": 4,
+     "YESNO": 2,
+     "MULTI": 1,
+     "LISTBOX": 1
+    }
+   },
+   {
+    "file": "ui/jamp/main.menu",
+    "name": "main",
+    "items": 21,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 11,
+     "BUTTON": 10
+    }
+   },
+   {
+    "file": "ui/jamp/multiplayer.menu",
+    "name": "multiplayermenu",
+    "items": 21,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 10,
+     "BUTTON": 11
+    }
+   },
+   {
+    "file": "ui/jamp/password.menu",
+    "name": "password_popmenu",
+    "items": 5,
+    "rect": [
+     "200",
+     "150",
+     "240",
+     "180"
+    ],
+    "fullscreen": "0",
+    "popup": true,
+    "types": {
+     "TEXT": 3,
+     "EDITFIELD": 1,
+     "BUTTON": 1
+    }
+   },
+   {
+    "file": "ui/jamp/password_request.menu",
+    "name": "password_request",
+    "items": 6,
+    "rect": [
+     "200",
+     "150",
+     "240",
+     "180"
+    ],
+    "fullscreen": "0",
+    "popup": true,
+    "types": {
+     "TEXT": 3,
+     "EDITFIELD": 1,
+     "BUTTON": 2
+    }
+   },
+   {
+    "file": "ui/jamp/player.menu",
+    "name": "playerMenu",
+    "items": 28,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 18,
+     "BUTTON": 7,
+     "EDITFIELD": 1,
+     "OWNERDRAW": 1,
+     "LISTBOX": 1
+    }
+   },
+   {
+    "file": "ui/jamp/player2.menu",
+    "name": "playerMenu2",
+    "items": 35,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 17,
+     "MODEL": 1,
+     "BUTTON": 12,
+     "MULTI": 1,
+     "LISTBOX": 4
+    }
+   },
+   {
+    "file": "ui/jamp/quickbots.menu",
+    "name": "quickbots",
+    "items": 20,
+    "rect": [
+     "100",
+     "50",
+     "440",
+     "380"
+    ],
+    "fullscreen": "MENU_FALSE",
+    "popup": true,
+    "types": {
+     "TEXT": 3,
+     "OWNERDRAW": 16,
+     "BUTTON": 1
+    }
+   },
+   {
+    "file": "ui/jamp/quickgame.menu",
+    "name": "quickgame",
+    "items": 16,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "MENU_TRUE",
+    "popup": false,
+    "types": {
+     "TEXT": 10,
+     "OWNERDRAW": 2,
+     "LISTBOX": 1,
+     "BUTTON": 3
+    }
+   },
+   {
+    "file": "ui/jamp/quickgame2.menu",
+    "name": "quickgame2",
+    "items": 28,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "MENU_TRUE",
+    "popup": false,
+    "types": {
+     "TEXT": 12,
+     "YESNO": 3,
+     "OWNERDRAW": 3,
+     "NUMERICFIELD": 6,
+     "BUTTON": 4
+    }
+   },
+   {
+    "file": "ui/jamp/quit.menu",
+    "name": "quitMenu",
+    "items": 22,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 15,
+     "BUTTON": 7
+    }
+   },
+   {
+    "file": "ui/jamp/rules.menu",
+    "name": "rulesMenu",
+    "items": 21,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 10,
+     "BUTTON": 11
+    }
+   },
+   {
+    "file": "ui/jamp/rules_force.menu",
+    "name": "rulesMenu_force",
+    "items": 82,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "MENU_TRUE",
+    "popup": false,
+    "types": {
+     "TEXT": 45,
+     "BUTTON": 22,
+     "TEXTSCROLL": 15
+    }
+   },
+   {
+    "file": "ui/jamp/rules_games.menu",
+    "name": "rulesMenu_games",
+    "items": 41,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "MENU_TRUE",
+    "popup": false,
+    "types": {
+     "TEXT": 22,
+     "BUTTON": 13,
+     "TEXTSCROLL": 6
+    }
+   },
+   {
+    "file": "ui/jamp/rules_items.menu",
+    "name": "rulesMenu_items",
+    "items": 59,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "MENU_TRUE",
+    "popup": false,
+    "types": {
+     "TEXT": 34,
+     "BUTTON": 16,
+     "TEXTSCROLL": 9
+    }
+   },
+   {
+    "file": "ui/jamp/rules_moves.menu",
+    "name": "rulesMenu_moves",
+    "items": 21,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 14,
+     "MULTI": 1,
+     "LISTBOX": 1,
+     "MODEL": 1,
+     "TEXTSCROLL": 1,
+     "BUTTON": 3
+    }
+   },
+   {
+    "file": "ui/jamp/rules_weapons.menu",
+    "name": "rulesMenu_weapons",
+    "items": 76,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "MENU_TRUE",
+    "popup": false,
+    "types": {
+     "TEXT": 43,
+     "BUTTON": 20,
+     "TEXTSCROLL": 13
+    }
+   },
+   {
+    "file": "ui/jamp/saber.menu",
+    "name": "saberMenu",
+    "items": 49,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 22,
+     "BUTTON": 21,
+     "LISTBOX": 4,
+     "MODEL": 2
+    }
+   },
+   {
+    "file": "ui/jamp/serverinfo.menu",
+    "name": "serverinfo_popmenu",
+    "items": 6,
+    "rect": [
+     "140",
+     "60",
+     "360",
+     "360"
+    ],
+    "fullscreen": "0",
+    "popup": true,
+    "types": {
+     "TEXT": 3,
+     "LISTBOX": 1,
+     "BUTTON": 2
+    }
+   },
+   {
+    "file": "ui/jamp/setup.menu",
+    "name": "setup_menu",
+    "items": 108,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 53,
+     "BUTTON": 20,
+     "MULTI": 29,
+     "SLIDER": 5,
+     "LISTBOX": 1
+    }
+   },
+   {
+    "file": "ui/jamp/siege_class.menu",
+    "name": "ingame_siegeclass",
+    "items": 154,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "1",
+    "popup": false,
+    "types": {
+     "TEXT": 116,
+     "BUTTON": 28,
+     "EDITFIELD": 4,
+     "MULTI": 1,
+     "LISTBOX": 3,
+     "TEXTSCROLL": 2
+    }
+   },
+   {
+    "file": "ui/jamp/siege_msg.menu",
+    "name": "siege_popmenu",
+    "items": 5,
+    "rect": [
+     "158",
+     "80",
+     "320",
+     "320"
+    ],
+    "fullscreen": "0",
+    "popup": true,
+    "types": {
+     "TEXT": 4,
+     "BUTTON": 1
+    }
+   },
+   {
+    "file": "ui/jamp/vid_warning.menu",
+    "name": "videowarningMenu",
+    "items": 8,
+    "rect": [
+     "0",
+     "0",
+     "640",
+     "480"
+    ],
+    "fullscreen": "0",
+    "popup": true,
+    "types": {
+     "TEXT": 6,
+     "BUTTON": 2
+    }
+   },
+   {
+    "file": "ui/jamp/videodriver.menu",
+    "name": "videodriverMenu",
+    "items": 4,
+    "rect": [
+     "100",
+     "120",
+     "440",
+     "320"
+    ],
+    "fullscreen": "0",
+    "popup": true,
+    "types": {
+     "TEXT": 2,
+     "BUTTON": 1,
+     "OWNERDRAW": 1
+    }
+   }
+  ],
+  "item_types": {
+   "TEXT": 947,
+   "YESNO": 34,
+   "OWNERDRAW": 132,
+   "MULTI": 67,
+   "EDITFIELD": 30,
+   "NUMERICFIELD": 16,
+   "BUTTON": 397,
+   "BIND": 126,
+   "SLIDER": 14,
+   "LISTBOX": 33,
+   "MODEL": 7,
+   "TEXTSCROLL": 46
+  },
+  "script_verbs": {
+   "uiscript": 323,
+   "play": 711,
+   "close": 205,
+   "open": 158,
+   "show": 1149,
+   "hide": 1396,
+   "setitemcolor": 1028,
+   "exec": 56,
+   "setfocus": 15,
+   "setitemrect": 107,
+   "setcvartocvar": 3,
+   "ui_script": 3,
+   "fadein": 2,
+   "fadeout": 2,
+   "setcvar": 112,
+   "setitembackground": 69,
+   "disable": 81,
+   "setitemtext": 92,
+   "transition2": 15,
+   "defer": 17,
+   "setitemrectcvar": 8,
+   "rundeferred": 2
+  },
+  "ui_scripts": {
+   "setui_dualforcepower": 1,
+   "forcePowersDisable": 2,
+   "dualForcePowers": 1,
+   "loadControls": 2,
+   "saveControls": 2,
+   "update": 17,
+   "CreateFavorite": 1,
+   "loadArenas": 3,
+   "setBotButtons": 2,
+   "clampmaxplayers": 3,
+   "checkservername": 4,
+   "setSiegeNoBots": 1,
+   "weaponDisable": 2,
+   "StartServer": 2,
+   "LoadDemos": 1,
+   "RunDemo": 2,
+   "clearError": 1,
+   "FindPlayer": 1,
+   "setBotButton": 1,
+   "addBot": 1,
+   "closeingame": 25,
+   "clearmouseover": 5,
+   "resetmaplist": 1,
+   "voteGame": 1,
+   "voteMap": 1,
+   "voteKick": 1,
+   "leave": 1,
+   "quit": 1,
+   "updatesiegeobjgraphics": 2,
+   "setsiegeobjbuttons": 34,
+   "voiceOrders": 11,
+   "updateForceStatus": 6,
+   "setForce": 8,
+   "getcharcvars": 2,
+   "character": 2,
+   "characterchanged": 2,
+   "resetcharacterlistboxes": 2,
+   "char_skin": 6,
+   "updatecharmodel": 2,
+   "saveTemplate": 1,
+   "getsabercvars": 2,
+   "saber_hilt": 14,
+   "saber_color": 8,
+   "saber2_hilt": 10,
+   "saber2_color": 8,
+   "getsaberhiltinfo": 2,
+   "saber_type": 6,
+   "setscreensaberhilt": 2,
+   "setscreensaberstaff": 2,
+   "setscreensaberhilt1": 2,
+   "setscreensaberhilt2": 2,
+   "updatesabercvars": 6,
+   "getvideosetup": 4,
+   "glCustom": 17,
+   "updatevideosetup": 3,
+   "resetdefaults": 2,
+   "UpdateFilter": 2,
+   "closeJoin": 1,
+   "RefreshServers": 1,
+   "RefreshFilter": 3,
+   "ServerSort": 5,
+   "checkpassword": 2,
+   "addFavorite": 1,
+   "DeleteFavorite": 1,
+   "JoinServer": 1,
+   "checkforsiege": 1,
+   "Quit": 1,
+   "setMoveCharacter": 1,
+   "setMovesListDefault": 1,
+   "resetMovesList": 1,
+   "setsaberboxesandhilts": 1,
+   "ServerStatus": 2,
+   "loadMods": 1,
+   "RunMod": 1,
+   "setteamclassicons": 1,
+   "updatesiegeclasscnt": 4,
+   "updatesiegecvars": 10,
+   "resetsiegelistboxes": 10,
+   "resetitemdescription": 13,
+   "updatesiegeweapondesc": 1,
+   "updatesiegeinventorydesc": 1,
+   "updatesiegeforcedesc": 1,
+   "setsiegeclassandteam": 1
+  },
+  "ownerdraws": {
+   "UI_FORCE_MASTERY_SET": 2,
+   "250": 2,
+   "UI_NETGAMETYPE": 3,
+   "UI_BLUETEAM1": 3,
+   "UI_REDTEAM1": 3,
+   "UI_BLUETEAM2": 3,
+   "UI_REDTEAM2": 3,
+   "UI_BLUETEAM3": 3,
+   "UI_REDTEAM3": 3,
+   "UI_BLUETEAM4": 3,
+   "UI_REDTEAM4": 3,
+   "UI_BLUETEAM5": 3,
+   "UI_REDTEAM5": 3,
+   "UI_BLUETEAM6": 3,
+   "UI_REDTEAM6": 3,
+   "UI_BLUETEAM7": 3,
+   "UI_REDTEAM7": 3,
+   "UI_BLUETEAM8": 3,
+   "UI_REDTEAM8": 3,
+   "UI_SKILL": 2,
+   "UI_STARTMAPCINEMATIC": 3,
+   "UI_BOTNAME": 1,
+   "UI_REDBLUE": 1,
+   "UI_BOTSKILL": 1,
+   "UI_ALLMAPS_SELECTION": 1,
+   "UI_SELECTEDPLAYER": 1,
+   "UI_SKIN_COLOR": 3,
+   "UI_FORCE_RANK": 2,
+   "UI_FORCE_SIDE": 2,
+   "UI_FORCE_POINTS": 2,
+   "UI_JEDI_NONJEDI": 1,
+   "UI_FORCE_RANK_LEVITATION": 1,
+   "UI_FORCE_RANK_PUSH": 1,
+   "UI_FORCE_RANK_PULL": 1,
+   "UI_FORCE_RANK_SPEED": 1,
+   "UI_FORCE_RANK_SEE": 1,
+   "UI_FORCE_RANK_ABSORB": 1,
+   "UI_FORCE_RANK_HEAL": 1,
+   "UI_FORCE_RANK_PROTECT": 1,
+   "UI_FORCE_RANK_TELEPATHY": 1,
+   "UI_FORCE_RANK_TEAM_HEAL": 1,
+   "UI_FORCE_RANK_GRIP": 1,
+   "UI_FORCE_RANK_DRAIN": 1,
+   "UI_FORCE_RANK_LIGHTNING": 1,
+   "UI_FORCE_RANK_RAGE": 1,
+   "UI_FORCE_RANK_TEAM_FORCE": 1,
+   "UI_FORCE_RANK_SABERATTACK": 1,
+   "UI_FORCE_RANK_SABERDEFEND": 1,
+   "UI_FORCE_RANK_SABERTHROW": 1,
+   "UI_CHAT_MAIN": 6,
+   "UI_CHAT_ATTACK": 3,
+   "UI_CHAT_DEFEND": 4,
+   "UI_CHAT_REQUEST": 6,
+   "UI_CHAT_REPLY": 5,
+   "UI_CHAT_SPOT": 4,
+   "UI_CHAT_TACTICAL": 6,
+   "UI_NETSOURCE": 1,
+   "UI_NETFILTER": 1,
+   "UI_JOINGAMETYPE": 1,
+   "UI_SERVERREFRESHDATE": 1,
+   "UI_GLINFO": 1
+  },
+  "feeders": {
+   "FEEDER_ALLMAPS": 3,
+   "FEEDER_DEMOS": 1,
+   "FEEDER_FINDPLAYER": 1,
+   "FEEDER_SERVERSTATUS": 2,
+   "FEEDER_PLAYER_LIST": 1,
+   "FEEDER_Q3HEADS": 2,
+   "19": 2,
+   "23": 2,
+   "20": 2,
+   "21": 2,
+   "22": 2,
+   "FEEDER_FORCECFG": 1,
+   "FEEDER_SABER_SINGLE_INFO": 6,
+   "FEEDER_SABER_STAFF_INFO": 2,
+   "40": 2,
+   "FEEDER_SERVERS": 1,
+   "42": 1,
+   "41": 1,
+   "9": 1,
+   "FEEDER_SIEGE_CLASS_WEAPONS": 1,
+   "FEEDER_SIEGE_CLASS_INVENTORY": 1,
+   "FEEDER_SIEGE_CLASS_FORCE": 1
+  },
+  "cvars": {
+   "g_friendlyfire": 1,
+   "g_weaponDisable": 2,
+   "g_duelWeaponDisable": 2,
+   "g_privateDuel": 1,
+   "g_forcePowerDisable": 2,
+   "ui_dualforcepower": 1,
+   "g_saberLocking": 1,
+   "g_teamautojoin": 1,
+   "g_forceBasedTeams": 1,
+   "g_autoMapCycle": 1,
+   "g_allowvote": 1,
+   "ui_dedicated": 1,
+   "g_password": 1,
+   "sv_pure": 1,
+   "sv_allowdownload": 1,
+   "sv_minping": 1,
+   "sv_maxping": 1,
+   "sv_maxrate": 1,
+   "sv_reconnectlimit": 1,
+   "+forward": 2,
+   "+back": 2,
+   "+left": 2,
+   "+right": 2,
+   "+speed": 2,
+   "+moveleft": 2,
+   "+moveright": 2,
+   "+strafe": 2,
+   "+moveup": 2,
+   "+movedown": 2,
+   "+attack": 2,
+   "+altattack": 2,
+   "saberAttackCycle": 2,
+   "+use": 2,
+   "+button2": 2,
+   "invnext": 2,
+   "invprev": 2,
+   "+lookup": 2,
+   "+lookdown": 2,
+   "+mlook": 2,
+   "centerview": 2,
+   "weapon 1": 2,
+   "weapon 2": 2,
+   "weapon 3": 2,
+   "weapon 4": 2,
+   "weapon 5": 2,
+   "weapon 6": 2,
+   "weapon 7": 2,
+   "weapon 8": 2,
+   "weapon 13": 2,
+   "weapon 9": 2,
+   "weapon 10": 2,
+   "weapnext": 2,
+   "weapprev": 2,
+   "force_throw": 2,
+   "force_pull": 2,
+   "force_speed": 2,
+   "force_seeing": 2,
+   "+useforce": 2,
+   "forcenext": 2,
+   "forceprev": 2,
+   "force_protect": 2,
+   "force_absorb": 2,
+   "force_heal": 2,
+   "force_healother": 2,
+   "force_distract": 2,
+   "+force_grip": 2,
+   "+force_drain": 2,
+   "+force_lightning": 2,
+   "force_rage": 2,
+   "force_forcepowerother": 2,
+   "cl_freelook": 2,
+   "ui_mousePitch": 2,
+   "m_filter": 2,
+   "in_joystick": 2,
+   "joy_xbutton": 2,
+   "joy_ybutton": 2,
+   "cl_run": 2,
+   "cg_autoswitch": 2,
+   "messagemode": 2,
+   "messagemode2": 2,
+   "voicechat": 2,
+   "automap_toggle": 2,
+   "+scores": 2,
+   "engage_duel": 2,
+   "cg_thirdperson !": 2,
+   "taunt": 2,
+   "bow": 2,
+   "meditate": 2,
+   "flourish": 2,
+   "gloat": 2,
+   "ui_favoriteAddress": 1,
+   "sv_hostname": 1,
+   "bot_minplayers": 2,
+   "g_siegeTeamSwitch": 1,
+   "sv_maxclients": 2,
+   "g_teamforcebalance": 1,
+   "timelimit": 2,
+   "fraglimit": 2,
+   "capturelimit": 2,
+   "duel_fraglimit": 2,
+   "com_errorMessage": 1,
+   "ui_findplayer": 1,
+   "ui_playerServersFound": 1,
+   "ui_about_hostname": 1,
+   "cl_currentServerAddress": 1,
+   "ui_about_mapname": 1,
+   "ui_about_gametype": 1,
+   "ui_about_maxclients": 1,
+   "ui_about_timelimit": 1,
+   "ui_about_fraglimit": 1,
+   "ui_about_capturelimit": 1,
+   "ui_about_duellimit": 1,
+   "ui_about_botminplayers": 1,
+   "version": 1,
+   "use_ff": 1,
+   "currentObjButton": 34,
+   "siege_missionname": 2,
+   "ui_Name": 2,
+   "ui_char_model": 2,
+   "ui_SaveFCF": 1,
+   "ui_saber_type": 6,
+   "ui_saber": 6,
+   "ui_saber2": 6,
+   "ui_saber_color": 12,
+   "ui_saber2_color": 12,
+   "ui_r_modified": 21,
+   "ui_r_glCustom": 2,
+   "ui_r_mode": 2,
+   "ui_r_colorbits": 2,
+   "ui_r_fullscreen": 2,
+   "ui_r_lodbias": 2,
+   "ui_r_picmip": 2,
+   "ui_r_texturebits": 2,
+   "ui_r_texturemode": 2,
+   "ui_r_detailtextures": 2,
+   "r_swapInterval": 2,
+   "ui_r_ext_compress_textures": 1,
+   "r_dynamiclight": 2,
+   "cg_marks": 2,
+   "r_flares": 2,
+   "s_khz": 2,
+   "s_UseOpenAL": 2,
+   "cg_drawcrosshair": 2,
+   "cg_drawCrosshairNames": 2,
+   "cg_forceModel": 2,
+   "cg_deferPlayers": 2,
+   "cg_teamChatsOnly": 2,
+   "cg_simpleItems": 2,
+   "cg_drawTeamOverlay": 2,
+   "ui_disableWeaponSway": 4,
+   "cg_footsteps": 2,
+   "se_language": 2,
+   "s_language": 2,
+   "siege_primobj_desc": 1,
+   "siege_objective1_desc": 1,
+   "siege_objective2_desc": 1,
+   "siege_objective3_desc": 1,
+   "siege_objective4_desc": 1,
+   "siege_objective5_desc": 1,
+   "siege_objective6_desc": 1,
+   "siege_objective7_desc": 1,
+   "ui_browserShowEmpty": 1,
+   "ui_browserShowFull": 1,
+   "rate": 1,
+   "password": 2,
+   "ui_singlePlayerActive": 1,
+   "ui_rules_backout": 1,
+   "ui_movesflag": 1,
+   "ui_move_title": 2,
+   "ui_move_desc": 1,
+   "r_dynamicglow": 1,
+   "cl_allowDownload": 1,
+   "ui_holdteam": 5,
+   "ui_siege_class": 6,
+   "name": 1,
+   "ui_team": 1,
+   "cg_siegeTeam1Name": 1,
+   "ui_tm1_cnt": 1,
+   "cg_siegeTeam2Name": 1,
+   "ui_tm2_cnt": 1,
+   "ui_class_health": 1,
+   "ui_class_armor": 1,
+   "ui_class_speed": 1,
+   "ui_classdesc": 1,
+   "ui_class_powerlevelslot0": 1,
+   "ui_class_powerlevelslot1": 1,
+   "ui_class_powerlevelslot2": 1,
+   "ui_class_powerlevelslot3": 1,
+   "ui_class_powerlevelslot4": 1,
+   "ui_class_powerlevelslot5": 1,
+   "ui_class_powerlevelslot6": 1,
+   "ui_class_powerlevelslot7": 1,
+   "ui_class_powerlevelslot8": 1,
+   "ui_itemforceinvdesc": 1,
+   "cg_siegeMessage": 1
+  },
+  "art": {
+   "gfx/menus/menu_blendbox": 135,
+   "gfx/menus/menu_buttonback": 148,
+   "menu/art/unknownmap_mp": 1,
+   "gfx/menus/main_centerblue": 17,
+   "gfx/menus/menu_side_text": 18,
+   "gfx/menus/menu_side_text_right": 18,
+   "gfx/menus/main_background": 17,
+   "gfx/menus/jediacademy": 12,
+   "gfx/menus/menu_boxes_left": 14,
+   "gfx/menus/menu_boxes_right": 13,
+   "gfx/menus/menu_blendbox2": 77,
+   "gfx/menus/menu_blendbox3": 4,
+   "gfx/menus/menu_top_mp": 1,
+   "gfx/menus/menu_box_ingame": 17,
+   "*siege_mapgraphic": 3,
+   "gfx/menus/x": 32,
+   "gfx/2d/select": 66,
+   "*team1_objective1_donemapicon": 2,
+   "*team1_objective2_donemapicon": 2,
+   "*team1_objective3_donemapicon": 2,
+   "*team1_objective4_donemapicon": 2,
+   "*team1_objective5_donemapicon": 2,
+   "*team1_objective6_donemapicon": 2,
+   "*team1_objective7_donemapicon": 2,
+   "*team1_objective8_donemapicon": 2,
+   "*team2_objective1_donemapicon": 2,
+   "*team2_objective2_donemapicon": 2,
+   "*team2_objective3_donemapicon": 2,
+   "*team2_objective4_donemapicon": 2,
+   "*team2_objective5_donemapicon": 2,
+   "*team2_objective6_donemapicon": 2,
+   "*team2_objective7_donemapicon": 2,
+   "*team2_objective8_donemapicon": 2,
+   "gfx/mp/custom_mp_default": 2,
+   "gfx/menus/saberonly": 1,
+   "gfx/menus/configforce": 1,
+   "gfx/menus/menu_blendboxr": 1,
+   "forcecirclegray": 1,
+   "gfx/menus/saber_icon_blue": 4,
+   "gfx/menus/saber_icon_green": 4,
+   "gfx/menus/saber_icon_orange": 4,
+   "gfx/menus/saber_icon_purple": 4,
+   "gfx/menus/saber_icon_yellow": 4,
+   "gfx/menus/saber_icon_red": 4,
+   "gfx/menus/menu_boxred": 6,
+   "gfx/menus/greyscale": 2,
+   "gfx/menus/eax": 2,
+   "gfx/menus/menu_blendbox_extended": 1,
+   "gfx/menus/videologo": 1,
+   "gfx/menus/main_ring": 1,
+   "gfx/menus/main_centerwindow": 1,
+   "gfx/menus/main_leftwindow": 1,
+   "gfx/menus/main_rightwindow": 1,
+   "gfx/menus/charmenu": 1,
+   "gfx/menus/charmenu_bottom": 1,
+   "gfx/mp/NEW_f_icon_jump": 1,
+   "gfx/mp/NEW_f_icon_speed": 1,
+   "gfx/mp/NEW_f_icon_push": 1,
+   "gfx/mp/NEW_f_icon_pull": 1,
+   "gfx/mp/NEW_f_icon_sight": 1,
+   "gfx/mp/NEW_f_icon_lt_protect": 1,
+   "gfx/mp/NEW_f_icon_lt_absorb": 1,
+   "gfx/mp/NEW_f_icon_lt_heal": 1,
+   "gfx/mp/NEW_f_icon_lt_mind_trick": 1,
+   "gfx/mp/NEW_f_icon_lt_healother": 1,
+   "gfx/mp/NEW_f_icon_dk_grip": 1,
+   "gfx/mp/NEW_f_icon_dk_drain": 1,
+   "gfx/mp/NEW_f_icon_dk_l1": 1,
+   "gfx/mp/NEW_f_icon_dk_rage": 1,
+   "gfx/mp/NEW_f_icon_dk_forceother": 1,
+   "gfx/hud/i_icon_medkit": 1,
+   "gfx/hud/i_icon_bacta": 1,
+   "gfx/hud/i_icon_big_bacta": 1,
+   "gfx/hud/i_icon_seeker": 1,
+   "gfx/hud/i_icon_sentrygun": 1,
+   "gfx/hud/i_icon_eweb": 1,
+   "gfx/hud/i_icon_shieldwall": 1,
+   "gfx/hud/i_icon_psd": 1,
+   "gfx/hud/i_icon_cloak": 1,
+   "gfx/hud/i_icon_jetpack": 1,
+   "gfx/hud/w_icon_lightsaber": 1,
+   "gfx/hud/w_icon_blaster_pistol": 1,
+   "gfx/hud/w_icon_blaster": 1,
+   "gfx/hud/w_icon_disruptor": 1,
+   "gfx/hud/w_icon_bowcaster": 1,
+   "gfx/hud/w_icon_repeater": 1,
+   "gfx/hud/w_icon_demp2": 1,
+   "gfx/hud/w_icon_flechette": 1,
+   "gfx/hud/w_icon_c_rifle": 1,
+   "gfx/hud/w_icon_merrsonn": 1,
+   "gfx/hud/w_icon_thermal": 1,
+   "gfx/hud/w_icon_tripmine": 1,
+   "gfx/hud/w_icon_detpack": 1,
+   "gfx/menus/sabermenu_back": 1,
+   "gfx/menus/sabermenu_box": 1,
+   "gfx/menus/sabermenu_box_top": 2,
+   "gfx/menus/sabermenu_box_middle": 2,
+   "gfx/menus/sabermenu_box_bottom": 2,
+   "gfx/2d/mp_spec_symbol": 1,
+   "gfx/2d/mp_autoteam_symbol": 1,
+   "gfx/mp/c_icon_infantry": 1,
+   "gfx/mp/c_icon_heavy_weapons": 1,
+   "gfx/mp/c_icon_demolitionist": 1,
+   "gfx/mp/c_icon_vanguard": 1,
+   "gfx/mp/c_icon_support": 1,
+   "gfx/mp/c_icon_jedi_general": 1
+  },
+  "models": {
+   "ui_char_model": 3,
+   "models/weapons2/saber_reborn/saber_w.glm": 4
+  },
+  "sounds": {
+   "sound/interface/button1.wav": 518,
+   "sound/interface/menuroam.wav": 5,
+   "sound/weapons/saber/saberoff.mp3": 16,
+   "sound/interface/button1": 99,
+   "sound/interface/esc.wav": 24,
+   "sound/misc/nomenu.wav": 2,
+   "sound/interface/choose_color.wav": 2,
+   "sound/interface/choose_head.wav": 4,
+   "sound/interface/choose_torso.wav": 2,
+   "sound/interface/choose_saber.wav": 6,
+   "sound/interface/choose_hilt.wav": 8,
+   "sound/interface/choose_blade.wav": 24,
+   "sound/weapons/saber/saberoff": 1
+  },
+  "art_not_plain_images": [
+   "*siege_mapgraphic",
+   "*team1_objective1_donemapicon",
+   "*team1_objective2_donemapicon",
+   "*team1_objective3_donemapicon",
+   "*team1_objective4_donemapicon",
+   "*team1_objective5_donemapicon",
+   "*team1_objective6_donemapicon",
+   "*team1_objective7_donemapicon",
+   "*team1_objective8_donemapicon",
+   "*team2_objective1_donemapicon",
+   "*team2_objective2_donemapicon",
+   "*team2_objective3_donemapicon",
+   "*team2_objective4_donemapicon",
+   "*team2_objective5_donemapicon",
+   "*team2_objective6_donemapicon",
+   "*team2_objective7_donemapicon",
+   "*team2_objective8_donemapicon",
+   "forcecirclegray",
+   "gfx/menus/menu_blendbox2",
+   "gfx/menus/menu_blendbox3",
+   "gfx/menus/menu_box_ingame",
+   "gfx/menus/videologo"
+  ],
+  "warnings": [
+   "ui/jamp/ingame_orders.menu: line 3: unknown top-level '{'"
+  ]
+ }
+]

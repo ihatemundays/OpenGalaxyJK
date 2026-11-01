@@ -202,12 +202,30 @@ qboolean UI_ConsoleCommand( void )
 {
 	char	*cmd;
 
+	cmd = UI_Argv( 0 );
+
+	if ( Q_stricmp (cmd, "rml_run") == 0 )
+	{
+		// UI_Argv reuses one buffer
+		char menuName[MAX_QPATH], event[MAX_QPATH];
+		Q_strncpyz( menuName, UI_Argv( 1 ), sizeof( menuName ) );
+		Q_strncpyz( event, UI_Argv( 3 ), sizeof( event ) );
+		const int index = atoi( UI_Argv( 2 ) );
+		const int x = atoi( UI_Argv( 4 ) );
+		Menu_RmlEvent( menuName, index, event, x, atoi( UI_Argv( 5 ) ) );
+		return qtrue;
+	}
+
+	if ( Q_stricmp (cmd, "rml_paint") == 0 )
+	{
+		Menus_RmlPaint( UI_Argv( 1 ) );
+		return qtrue;
+	}
+
 	if (!ui.SG_GameAllowedToSaveHere(qtrue))	//only check if incamera
 	{
 		return qfalse;
 	}
-
-	cmd = UI_Argv( 0 );
 
 	// ensure minimum menu data is available
 	Menu_Cache();

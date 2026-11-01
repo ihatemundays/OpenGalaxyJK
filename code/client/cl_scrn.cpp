@@ -462,6 +462,8 @@ void SCR_DrawScreenField( stereoFrame_t stereoFrame ) {
 	// the menu draws next
 	_UI_Refresh( cls.realtime );
 
+	CL_RmlFrame();
+
 	// console draws next
 	Con_DrawConsole ();
 
