@@ -447,6 +447,16 @@ extern	cvar_t	*cl_reconnectArgs;
 //=================================================
 
 //
+// cl_rml
+//
+void CL_RmlInit( void );
+void CL_RmlShutdown( void );
+void CL_RmlFrame( void );
+qboolean CL_RmlKeyEvent( int key, qboolean down );
+qboolean CL_RmlCharEvent( int key );
+qboolean CL_RmlMouseEvent( int dx, int dy );
+
+//
 // cl_main
 //
 

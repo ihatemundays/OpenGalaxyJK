@@ -526,7 +526,14 @@ void _UI_Refresh( int realtime )
 	if (Menu_Count() > 0)
 	{
 		// paint all the menus
-		Menu_PaintAll();
+		if (uiInfo.uiDC.getCVarValue("ui_rmlUi"))
+		{
+			Menus_RmlSync();
+		}
+		else
+		{
+			Menu_PaintAll();
+		}
 		// refresh server browser list
 //		UI_DoServerRefresh();
 		// refresh server status
@@ -537,7 +544,7 @@ void _UI_Refresh( int realtime )
 
 	// draw cursor
 	UI_SetColor( NULL );
-	if (Menu_Count() > 0)
+	if (Menu_Count() > 0 && !uiInfo.uiDC.getCVarValue("ui_rmlUi"))
 	{
 		if (uiInfo.uiDC.cursorShow == qtrue)
 		{

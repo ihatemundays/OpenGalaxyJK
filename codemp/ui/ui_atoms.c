@@ -83,7 +83,25 @@ int cmdcmp( const void *a, const void *b ) {
 	return Q_stricmp( (const char *)a, ((consoleCommand_t*)b)->cmd );
 }
 
+static void UI_RmlPaint_f( void ) {
+	Menus_RmlPaint( UI_Argv( 1 ) );
+}
+
+static void UI_RmlRun_f( void ) {
+	// UI_Argv reuses one buffer
+	char menuName[MAX_QPATH], event[MAX_QPATH];
+	int index, x;
+
+	Q_strncpyz( menuName, UI_Argv( 1 ), sizeof( menuName ) );
+	Q_strncpyz( event, UI_Argv( 3 ), sizeof( event ) );
+	index = atoi( UI_Argv( 2 ) );
+	x = atoi( UI_Argv( 4 ) );
+	Menu_RmlEvent( menuName, index, event, x, atoi( UI_Argv( 5 ) ) );
+}
+
 static consoleCommand_t	commands[] = {
+	{ "rml_paint",			UI_RmlPaint_f },
+	{ "rml_run",			UI_RmlRun_f },
 	{ "ui_cache",			UI_Cache_f },
 	{ "ui_load",			UI_Load },
 	{ "ui_openmenu",		UI_OpenMenu_f },

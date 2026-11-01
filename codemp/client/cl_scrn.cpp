@@ -475,6 +475,8 @@ void SCR_DrawScreenField( stereoFrame_t stereoFrame ) {
 	// Engine internal menu
 	CL_DrawEngineMenus();
 
+	CL_RmlFrame();
+
 	// console draws next
 	Con_DrawConsole ();
 

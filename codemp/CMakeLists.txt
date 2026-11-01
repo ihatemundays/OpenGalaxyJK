@@ -424,6 +424,8 @@ if(BuildMPEngine)
 	#    Source Files
 
 	set(MPEngineClientFiles
+		"${MPDir}/client/cl_rml.cpp"
+		${RmlFiles}
 		"${MPDir}/client/cl_avi.cpp"
 		"${MPDir}/client/cl_cgame.cpp"
 		"${MPDir}/client/cl_cgameapi.cpp"
@@ -463,6 +465,7 @@ if(BuildMPEngine)
 		"${MPDir}/client/snd_music.cpp"
 		"${MPDir}/client/snd_music.h"
 		)
+	set_source_files_properties("${SharedDir}/rml/rml_ui.cpp" PROPERTIES COMPILE_OPTIONS "${RmlCompileOption}")
 	source_group("client" FILES ${MPEngineClientFiles})
 	set(MPEngineFiles ${MPEngineFiles} ${MPEngineClientFiles})
 
@@ -617,7 +620,7 @@ if(BuildMPEngine)
 
 	set_target_properties(${MPEngine} PROPERTIES INCLUDE_DIRECTORIES "${MPEngineIncludeDirectories}")
 	set_target_properties(${MPEngine} PROPERTIES PROJECT_LABEL "MP Client")
-	target_link_libraries(${MPEngine} ${MPEngineLibraries})
+	target_link_libraries(${MPEngine} ${MPEngineLibraries} RmlUi::Core)
 endif(BuildMPEngine)
 
 #        Dedicated Server (Engine) (jampded.exe)

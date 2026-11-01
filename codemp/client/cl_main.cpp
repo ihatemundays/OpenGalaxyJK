@@ -628,6 +628,7 @@ void CL_ShutdownAll( qboolean shutdownRef ) {
 	CL_ShutdownCGame();
 	// shutdown UI
 	CL_ShutdownUI();
+	CL_RmlShutdown();
 
 	// shutdown the renderer
 	if(shutdownRef)
@@ -2310,6 +2311,7 @@ CL_ShutdownRef
 ============
 */
 static void CL_ShutdownRef( qboolean restarting ) {
+	CL_RmlShutdown();
 	if ( re )
 	{
 		if ( re->Shutdown )
@@ -2876,6 +2878,7 @@ void CL_Init( void ) {
 	Cmd_AddCommand ("clientinfo", CL_Clientinfo_f, "Prints the userinfo variables" );
 	Cmd_AddCommand ("snd_restart", CL_Snd_Restart_f, "Restart sound" );
 	Cmd_AddCommand ("vid_restart", CL_Vid_Restart_f, "Restart the renderer - or change the resolution" );
+	CL_RmlInit();
 	Cmd_AddCommand ("disconnect", CL_Disconnect_f, "Disconnect from current server" );
 	Cmd_AddCommand ("cinematic", CL_PlayCinematic_f, "Play a cinematic video" );
 	Cmd_AddCommand ("connect", CL_Connect_f, "Connect to a server" );

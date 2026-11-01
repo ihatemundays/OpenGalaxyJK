@@ -922,6 +922,9 @@ CL_MouseEvent
 =================
 */
 void CL_MouseEvent( int dx, int dy, int time ) {
+	if ( CL_RmlMouseEvent( dx, dy ) ) {
+		return;
+	}
 	if (cls.cursorActive) {
 		CL_UpdateCursorPosition( dx, dy );
 	} else if (g_clAutoMapMode && cls.cgameStarted)

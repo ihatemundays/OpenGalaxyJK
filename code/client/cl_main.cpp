@@ -149,6 +149,7 @@ void CL_FlushMemory( void ) {
 	CL_ShutdownCGame();
 
 	CL_ShutdownUI();
+	CL_RmlShutdown();
 
 	if ( re.Shutdown ) {
 		re.Shutdown( qfalse, qfalse );		// don't destroy window or context
@@ -892,6 +893,7 @@ CL_ShutdownRef
 ============
 */
 static void CL_ShutdownRef( qboolean restarting ) {
+	CL_RmlShutdown();
 	if ( re.Shutdown ) {
 		re.Shutdown( qtrue, restarting );
 	}
@@ -1309,6 +1311,7 @@ void CL_Init( void ) {
 	Cmd_AddCommand ("clientinfo", CL_Clientinfo_f);
 	Cmd_AddCommand ("snd_restart", CL_Snd_Restart_f);
 	Cmd_AddCommand ("vid_restart", CL_Vid_Restart_f);
+	CL_RmlInit();
 	Cmd_AddCommand ("disconnect", CL_Disconnect_f);
 	Cmd_AddCommand ("cinematic", CL_PlayCinematic_f);
 	Cmd_SetCommandCompletionFunc( "cinematic", CL_CompleteCinematic );

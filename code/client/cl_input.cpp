@@ -446,6 +446,9 @@ CL_MouseEvent
 =================
 */
 void CL_MouseEvent( int dx, int dy, int time ) {
+	if ( CL_RmlMouseEvent( dx, dy ) ) {
+		return;
+	}
 	if ( Key_GetCatcher( ) & KEYCATCH_UI ) {
 		_UI_MouseEvent( dx, dy );
 	}

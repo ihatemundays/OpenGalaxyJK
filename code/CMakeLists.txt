@@ -141,7 +141,11 @@ if(BuildSPEngine OR BuildJK2SPEngine)
 
 		"${SPDir}/client/vmachine.cpp"
 		"${SPDir}/client/vmachine.h"
+
+		"${SPDir}/client/cl_rml.cpp"
+		${RmlFiles}
 		)
+	set_source_files_properties("${SharedDir}/rml/rml_ui.cpp" PROPERTIES COMPILE_OPTIONS "${RmlCompileOption}")
 	source_group("client" FILES ${SPEngineClientFiles})
 	set(SPEngineFiles ${SPEngineFiles} ${SPEngineClientFiles})
 
@@ -443,6 +447,7 @@ if(BuildSPEngine OR BuildJK2SPEngine)
 		if(SPEngineLibraries)
 			target_link_libraries(${ProjectName} ${SPEngineLibraries})
 		endif(SPEngineLibraries)
+		target_link_libraries(${ProjectName} RmlUi::Core)
 	endfunction(add_sp_project)
 	if(BuildSPEngine)
 		add_sp_project(${SPEngine} "SP Client" ${SPDir} ${JKAInstallDir} ${JKASPClientComponent})
