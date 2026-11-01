@@ -1,0 +1,28 @@
+<rml>
+<head>
+<title>ingame_orders</title>
+<link type="text/rcss" href="ui/rml/base.rcss"/>
+<style>.item:hover span { color: #ffbf00ff; }</style>
+</head>
+<body style="" data-menu="ingame_orders" data-x="46.0" data-y="31.0" data-onopen="hide grpicon;show attack">
+<div class="screen">
+<div style="position:absolute;left:46dp;top:31dp;width:200dp;height:240dp;">
+<div class="item decoration" style="left:10dp;top:15dp;width:180dp;height:225dp;background-color:#001a00ff;" data-index="0" data-name="window"></div>
+<div class="item" style="left:10dp;top:20dp;width:200dp;height:20dp;" data-index="1" data-name="orders" data-group="grporders"></div>
+<div class="item" style="left:0dp;top:80dp;width:200dp;height:20dp;" data-index="2" data-name="orders" data-group="grporders" data-action="uiscript voiceOrders cmd bot_order %d 0" data-mouseenter="hide grpicon"><span style="top:2dp;font-family:ergoec;font-size:5dp;left:-900dp;width:2000dp;text-align:center;color:#ffffffff;">@MENUS_YOU_DECIDE</span></div>
+<div class="item cvarstate" style="left:0dp;top:100dp;width:200dp;height:20dp;" data-index="3" data-cvartest="g_gametype" data-cvarrule="hide" data-cvarvalues="5;6" data-name="orders" data-group="grporders" data-action="uiscript voiceOrders cmd bot_order %d 1" data-mouseenter="hide grpicon"><span style="top:2dp;font-family:ergoec;font-size:5dp;left:-900dp;width:2000dp;text-align:center;color:#ffffffff;">@MENUS_ATTACK_THE_ENEMY_S_BASE</span></div>
+<div class="item cvarstate" style="left:0dp;top:120dp;width:200dp;height:20dp;" data-index="4" data-cvartest="g_gametype" data-cvarrule="hide" data-cvarvalues="5;6" data-name="orders" data-group="grporders" data-action="uiscript voiceOrders cmd bot_order %d 2" data-mouseenter="hide grpicon"><span style="top:2dp;font-family:ergoec;font-size:5dp;left:-900dp;width:2000dp;text-align:center;color:#ffffffff;">@MENUS_DEFEND_OUR_BASE</span></div>
+<div class="item cvarstate" style="left:0dp;top:140dp;width:200dp;height:20dp;" data-index="5" data-cvartest="g_gametype" data-cvarrule="hide" data-cvarvalues="5;6" data-name="orders" data-group="grporders" data-action="uiscript voiceOrders cmd bot_order %d 3" data-mouseenter="hide grpicon"><span style="top:2dp;font-family:ergoec;font-size:5dp;left:-900dp;width:2000dp;text-align:center;color:#ffffffff;">@MENUS_GET_OUR_FLAG_BACK</span></div>
+<div class="item cvarstate" style="left:0dp;top:160dp;width:200dp;height:20dp;" data-index="6" data-cvartest="g_gametype" data-cvarrule="hide" data-cvarvalues="5;6" data-name="orders" data-group="grporders" data-action="uiscript voiceOrders cmd bot_order %d 4" data-mouseenter="hide grpicon"><span style="top:2dp;font-family:ergoec;font-size:5dp;left:-900dp;width:2000dp;text-align:center;color:#ffffffff;">@MENUS_GUARD_OUR_FLAG_CARRIER</span></div>
+<div class="item cvarstate" style="left:0dp;top:180dp;width:200dp;height:20dp;" data-index="7" data-cvartest="g_gametype" data-cvarrule="hide" data-cvarvalues="5;6" data-name="orders" data-group="grporders" data-action="uiscript voiceOrders cmd bot_order %d 5" data-mouseenter="hide grpicon"><span style="top:2dp;font-family:ergoec;font-size:5dp;left:-900dp;width:2000dp;text-align:center;color:#ffffffff;">@MENUS_GET_ENEMY_FLAG_BACK_TO</span></div>
+<div class="item cvarstate" style="left:0dp;top:100dp;width:200dp;height:20dp;" data-index="8" data-cvartest="g_gametype" data-cvarrule="hide" data-cvarvalues="5;7" data-name="orders" data-group="grporders" data-action="uiscript voiceOrders cmd bot_order %d 1" data-mouseenter="hide grpicon"><span style="top:2dp;font-family:ergoec;font-size:5dp;left:-900dp;width:2000dp;text-align:center;color:#ffffffff;">@MENUS_COMPLETE_THE_CURRENT</span></div>
+<div class="item cvarstate" style="left:0dp;top:120dp;width:200dp;height:20dp;" data-index="9" data-cvartest="g_gametype" data-cvarrule="hide" data-cvarvalues="5;7" data-name="orders" data-group="grporders" data-action="uiscript voiceOrders cmd bot_order %d 2" data-mouseenter="hide grpicon"><span style="top:2dp;font-family:ergoec;font-size:5dp;left:-900dp;width:2000dp;text-align:center;color:#ffffffff;">@MENUS_PREVENT_THE_ENEMY_FROM</span></div>
+<div class="item cvarstate" style="left:0dp;top:100dp;width:200dp;height:20dp;" data-index="10" data-cvartest="g_gametype" data-cvarrule="hide" data-cvarvalues="6;7" data-name="orders" data-group="grporders" data-action="uiscript voiceOrders cmd bot_order %d 1" data-mouseenter="hide grpicon"><span style="top:2dp;font-family:ergoec;font-size:5dp;left:-900dp;width:2000dp;text-align:center;color:#ffffffff;">@MENUS_FOLLOW_ME</span></div>
+<div class="item cvarstate" style="left:0dp;top:120dp;width:200dp;height:20dp;" data-index="11" data-cvartest="g_gametype" data-cvarrule="hide" data-cvarvalues="6;7" data-name="orders" data-group="grporders" data-action="uiscript voiceOrders cmd bot_order %d 2" data-mouseenter="hide grpicon"><span style="top:2dp;font-family:ergoec;font-size:5dp;left:-900dp;width:2000dp;text-align:center;color:#ffffffff;">@MENUS_ASSIST_ME</span></div>
+<div class="item cvarstate" style="left:0dp;top:140dp;width:200dp;height:20dp;" data-index="12" data-cvartest="g_gametype" data-cvarrule="hide" data-cvarvalues="6;7" data-name="orders" data-group="grporders" data-action="uiscript voiceOrders cmd bot_order %d 3" data-mouseenter="hide grpicon"><span style="top:2dp;font-family:ergoec;font-size:5dp;left:-900dp;width:2000dp;text-align:center;color:#ffffffff;">@MENUS_REGROUP</span></div>
+</div>
+<div id="rmlpaint" style="decorator:image(&quot;rmlpaint/ingame_orders&quot;);"></div>
+<div id="rmldesc" style="left:0dp;top:0dp;font-size:14dp;text-align:left;color:#ffffffff;"></div>
+</div>
+</body>
+</rml>

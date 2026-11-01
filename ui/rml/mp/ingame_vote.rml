@@ -1,0 +1,20 @@
+<rml>
+<head>
+<title>ingame_vote</title>
+<link type="text/rcss" href="ui/rml/base.rcss"/>
+<style>.item:hover span { color: #ffffffff; }</style>
+</head>
+<body style="" data-menu="ingame_vote" data-x="431.0" data-y="41.0" data-onopen="">
+<div class="screen">
+<div style="position:absolute;left:431dp;top:41dp;width:80dp;height:68dp;">
+<div class="item decoration" style="left:0dp;top:0dp;width:80dp;height:68dp;decorator:image(&quot;gfx/menus/menu_box_ingame&quot;);image-color:#ffffffff;" data-index="0" data-name="background_pic" data-group="none"></div>
+<div class="item hidden decoration" style="left:2dp;top:4dp;width:76dp;height:30dp;decorator:image(&quot;gfx/menus/menu_buttonback&quot;);image-color:#ffffffff;" data-index="1" data-name="button1" data-group="buttons"></div>
+<div class="item" style="left:2dp;top:4dp;width:76dp;height:30dp;" data-index="2" data-name="yes" data-action="play sound/interface/button1.wav;exec vote yes;uiscript closeingame" data-mouseenter="show button1" data-mouseexit="hide button1"><span style="top:0dp;font-family:ergoec;font-size:20dp;left:-962dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_YES</span></div>
+<div class="item hidden decoration" style="left:2dp;top:34dp;width:76dp;height:30dp;decorator:image(&quot;gfx/menus/menu_buttonback&quot;);image-color:#ffffffff;" data-index="3" data-name="button2" data-group="buttons"></div>
+<div class="item" style="left:2dp;top:34dp;width:76dp;height:30dp;" data-index="4" data-name="no" data-action="play sound/interface/button1.wav;exec vote no;uiscript closeingame" data-mouseenter="show button2" data-mouseexit="hide button2"><span style="top:0dp;font-family:ergoec;font-size:20dp;left:-962dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_NO</span></div>
+</div>
+<div id="rmlpaint" style="decorator:image(&quot;rmlpaint/ingame_vote&quot;);"></div>
+<div id="rmldesc" style="left:0dp;top:0dp;font-size:14dp;text-align:left;color:#ffffffff;"></div>
+</div>
+</body>
+</rml>

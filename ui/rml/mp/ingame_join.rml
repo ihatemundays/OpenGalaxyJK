@@ -1,0 +1,28 @@
+<rml>
+<head>
+<title>ingame_join</title>
+<link type="text/rcss" href="ui/rml/base.rcss"/>
+<style>.item:hover span { color: #ffffffff; }</style>
+</head>
+<body style="" data-menu="ingame_join" data-x="55.0" data-y="40.0" data-onopen="">
+<div class="screen">
+<div style="position:absolute;left:55dp;top:40dp;width:128dp;height:128dp;">
+<div class="item decoration" style="left:0dp;top:0dp;width:128dp;height:128dp;decorator:image(&quot;gfx/menus/menu_box_ingame&quot;);image-color:#ffffffff;" data-index="0" data-name="background_pic" data-group="none"></div>
+<div class="item hidden decoration" style="left:2dp;top:4dp;width:124dp;height:30dp;decorator:image(&quot;gfx/menus/menu_buttonback&quot;);image-color:#ffffffff;" data-index="1" data-name="button1" data-group="buttons"></div>
+<div class="item hidden decoration" style="left:2dp;top:34dp;width:124dp;height:30dp;decorator:image(&quot;gfx/menus/menu_buttonback&quot;);image-color:#ffffffff;" data-index="2" data-name="button2" data-group="buttons"></div>
+<div class="item hidden decoration" style="left:2dp;top:64dp;width:124dp;height:30dp;decorator:image(&quot;gfx/menus/menu_buttonback&quot;);image-color:#ffffffff;" data-index="3" data-name="button3" data-group="buttons"></div>
+<div class="item hidden decoration" style="left:2dp;top:94dp;width:124dp;height:30dp;decorator:image(&quot;gfx/menus/menu_buttonback&quot;);image-color:#ffffffff;" data-index="4" data-name="button4" data-group="buttons"></div>
+<div class="item cvarstate" style="left:2dp;top:4dp;width:124dp;height:30dp;" data-index="5" data-cvartest="ui_about_gametype" data-cvarrule="show" data-cvarvalues="6;7;8;9" data-name="team" data-action="play sound/interface/button1.wav;exec cmd team free;uiscript closeingame" data-mouseenter="show button1" data-mouseexit="hide button1"><span style="top:0dp;font-family:ergoec;font-size:20dp;left:-938dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_AUTO_TEAM</span></div>
+<div class="item cvarstate" style="left:2dp;top:34dp;width:124dp;height:30dp;" data-index="6" data-cvartest="ui_about_gametype" data-cvarrule="show" data-cvarvalues="6;7;8;9" data-name="team" data-action="play sound/interface/button1.wav;exec cmd team red;uiscript closeingame" data-mouseenter="show button2" data-mouseexit="hide button2"><span style="top:0dp;font-family:ergoec;font-size:20dp;left:-938dp;width:2000dp;text-align:center;color:#ff3333ff;">@MENUS_TEAM_RED</span></div>
+<div class="item cvarstate" style="left:2dp;top:64dp;width:124dp;height:30dp;" data-index="7" data-cvartest="ui_about_gametype" data-cvarrule="show" data-cvarvalues="6;7;8;9" data-name="team" data-action="play sound/interface/button1.wav;exec cmd team blue;uiscript closeingame" data-mouseenter="show button3" data-mouseexit="hide button3"><span style="top:0dp;font-family:ergoec;font-size:20dp;left:-938dp;width:2000dp;text-align:center;color:#3333ffff;">@MENUS_TEAM_BLUE</span></div>
+<div class="item cvarstate" style="left:2dp;top:34dp;width:124dp;height:30dp;" data-index="8" data-cvartest="ui_about_gametype" data-cvarrule="show" data-cvarvalues="4" data-name="team" data-action="play sound/interface/button1.wav;exec cmd duelteam single;uiscript closeingame" data-mouseenter="show button2" data-mouseexit="hide button2"><span style="top:0dp;font-family:ergoec;font-size:20dp;left:-938dp;width:2000dp;text-align:center;color:#ff3333ff;">@MP_INGAME_JOIN_SINGLE</span></div>
+<div class="item cvarstate" style="left:2dp;top:64dp;width:124dp;height:30dp;" data-index="9" data-cvartest="ui_about_gametype" data-cvarrule="show" data-cvarvalues="4" data-name="team" data-action="play sound/interface/button1.wav;exec cmd duelteam double;uiscript closeingame" data-mouseenter="show button3" data-mouseexit="hide button3"><span style="top:0dp;font-family:ergoec;font-size:20dp;left:-938dp;width:2000dp;text-align:center;color:#3333ffff;">@MP_INGAME_JOIN_DOUBLE</span></div>
+<div class="item cvarstate" style="left:2dp;top:94dp;width:124dp;height:30dp;" data-index="10" data-cvartest="ui_about_gametype" data-cvarrule="show" data-cvarvalues="6;7;8;9" data-name="team" data-action="play sound/interface/button1.wav;exec cmd team s;uiscript closeingame" data-mouseenter="show button4" data-mouseexit="hide button4"><span style="top:0dp;font-family:ergoec;font-size:20dp;left:-938dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_SPECTATE</span></div>
+<div class="item cvarstate" style="left:2dp;top:34dp;width:124dp;height:30dp;" data-index="11" data-cvartest="ui_about_gametype" data-cvarrule="hide" data-cvarvalues="4;6;7;8;9" data-name="team" data-action="play sound/interface/button1.wav;exec cmd team free;uiscript closeingame" data-mouseenter="show button2" data-mouseexit="hide button2"><span style="top:0dp;font-family:ergoec;font-size:20dp;left:-938dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_JOIN_GAME</span></div>
+<div class="item cvarstate" style="left:2dp;top:64dp;width:124dp;height:30dp;" data-index="12" data-cvartest="ui_about_gametype" data-cvarrule="hide" data-cvarvalues="4;6;7;8;9" data-name="team" data-action="play sound/interface/button1.wav;exec cmd team s;uiscript closeingame" data-mouseenter="show button3" data-mouseexit="hide button3"><span style="top:0dp;font-family:ergoec;font-size:20dp;left:-938dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_SPECTATE</span></div>
+</div>
+<div id="rmlpaint" style="decorator:image(&quot;rmlpaint/ingame_join&quot;);"></div>
+<div id="rmldesc" style="left:0dp;top:0dp;font-size:14dp;text-align:left;color:#ffffffff;"></div>
+</div>
+</body>
+</rml>

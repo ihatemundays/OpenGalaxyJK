@@ -1,0 +1,19 @@
+<rml>
+<head>
+<title>videodriverMenu</title>
+<link type="text/rcss" href="ui/rml/base.rcss"/>
+<style>.item:hover span { color: #ffffffff; }</style>
+</head>
+<body style="" data-menu="videodriverMenu" data-x="100.0" data-y="120.0" data-onopen="">
+<div class="screen">
+<div style="position:absolute;left:100dp;top:120dp;width:440dp;height:320dp;">
+<div class="item decoration" style="left:0dp;top:0dp;width:440dp;height:320dp;decorator:image(&quot;gfx/menus/menu_boxred&quot;);image-color:#ffffffff;" data-index="0" data-name="driver_background" data-group="none"></div>
+<div class="item hidden decoration" style="left:150dp;top:293dp;width:140dp;height:24dp;decorator:image(&quot;gfx/menus/menu_buttonback&quot;);image-color:#ffffffff;" data-index="1" data-name="driver_done_button" data-group="none"></div>
+<div class="item" style="left:150dp;top:293dp;width:140dp;height:24dp;" data-index="2" data-name="driver_done" data-group="none" data-action="close videodriverMenu" data-mouseenter="show driver_done_button" data-mouseexit="hide driver_done_button"><span style="top:0dp;font-family:anewhope;font-size:17dp;left:-930dp;width:2000dp;text-align:center;color:#c9a338ff;">@MENUS_DONE_CAPS</span></div>
+<div class="item decoration" style="left:10dp;top:3dp;width:430dp;height:280dp;" data-index="3" data-name="game_version" data-group="none"></div>
+</div>
+<div id="rmlpaint" style="decorator:image(&quot;rmlpaint/videodriverMenu&quot;);"></div>
+<div id="rmldesc" style="left:-680dp;top:450dp;font-size:14dp;text-align:center;color:#c9a338b2;width:2000dp;"></div>
+</div>
+</body>
+</rml>

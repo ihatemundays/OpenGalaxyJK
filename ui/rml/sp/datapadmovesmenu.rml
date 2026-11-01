@@ -1,0 +1,34 @@
+<rml>
+<head>
+<title>datapadMovesMenu</title>
+<link type="text/rcss" href="ui/rml/base.rcss"/>
+<style>.item:hover span { color: #ffffffff; }</style>
+</head>
+<body style="background-color:#000000ff;" data-menu="datapadMovesMenu" data-x="0.0" data-y="0.0" data-onopen="setcvar ui_movesflag 0;setcvar ui_move_title 0;uiscript setMoveCharacter;setcvar ui_move_title 2;uiscript resetMovesDesc;uiscript setMovesListDefault">
+<div class="screen">
+<div style="position:absolute;left:0dp;top:0dp;width:640dp;height:480dp;">
+<div class="item decoration" style="left:0dp;top:0dp;width:640dp;height:480dp;decorator:image(&quot;gfx/menus/datapad2&quot;);image-color:#ffffffff;" data-index="0" data-name="background" data-group="none"></div>
+<div class="item decoration" style="left:170dp;top:3dp;width:300dp;height:26dp;" data-index="1" data-name="screen_title"><span style="top:0dp;font-family:anewhope;font-size:20.4dp;left:-850dp;width:2000dp;text-align:center;color:#8cdaffff;">@MENUS_DATAPADTITLE</span></div>
+<div class="item decoration" style="left:25dp;top:47dp;width:255dp;height:23dp;background-color:#000099ff;" data-index="2" data-name="move_titles_box" data-group="none"></div>
+<div class="item decoration" style="left:25dp;top:69dp;width:255dp;height:30dp;border:1dp #000099ff;" data-index="3" data-name="move_titles_outline" data-group="none"></div>
+<div class="item decoration" style="left:25dp;top:47dp;width:255dp;height:23dp;" data-index="4" data-name="move_titles_title"><span style="top:0dp;font-family:anewhope;font-size:17dp;left:-875dp;width:2000dp;text-align:center;color:#8cdaffff;">@MENUS_MOVE_TYPES</span></div>
+<div class="item" style="left:25dp;top:77dp;width:340dp;height:14dp;" data-index="5" data-name="move_titles" data-group="none" data-desc="@MENUS_CHOOSE_MOVE_DESC" data-action="uiscript resetMovesList;uiscript resetMovesDesc;play sound/interface/button1.wav" data-mouseenter="show button_glow;setitemrect button_glow 0 73 320 24" data-mouseexit="hide button_glow"><span style="top:-5dp;font-family:ergoec;font-size:16dp;left:0dp;color:#9d9df4ff;"> <span class="cvartext" data-cvar="ui_move_title" data-multi="@MENUS_ACROBATICS;0;@MENUS_SINGLE_FAST;1;@MENUS_SINGLE_MEDIUM;2;@MENUS_SINGLE_STRONG;3;@MENUS_DUAL_SABERS;4;@MENUS_SABER_STAFF;5"></span></span></div>
+<div class="item decoration" style="left:26dp;top:110dp;width:253dp;height:23dp;background-color:#000099ff;" data-index="6" data-name="moveslist_title_box" data-group="none"></div>
+<div class="item decoration" style="left:35dp;top:108dp;width:253dp;height:26dp;" data-index="7" data-name="moveslist_title"><span style="top:0dp;font-family:anewhope;font-size:17dp;left:-875dp;width:2000dp;text-align:center;color:#8cdaffff;">@MENUS_MOVES</span></div>
+<div class="item" style="left:26dp;top:131dp;width:253dp;height:250dp;" data-index="8" data-name="moveslist" data-group="none" data-desc="@MENUS_MOVE_DESC2" data-action="uiscript resetMovesDesc" data-mouseenter="setitemcolor moveslist bordercolor 1 1 1 1" data-mouseexit="setitemcolor moveslist bordercolor 0 0 .8 1"></div>
+<div class="item decoration" style="left:287dp;top:40dp;width:330dp;height:360dp;border:2dp #000099ff;" data-index="9" data-name="character_box" data-group="none"></div>
+<div class="item decoration" style="left:295dp;top:-30dp;width:300dp;height:340dp;" data-index="10" data-name="character" data-group="models"></div>
+<div class="item" style="left:295dp;top:300dp;width:320dp;height:90dp;" data-index="11" data-name="item_desc"></div>
+<div class="item" style="left:20dp;top:420dp;width:120dp;height:25dp;" data-index="12" data-name="mission" data-group="none" data-desc="@MENUS_AN_OVERVIEW_OF_MISSION" data-action="play sound/interface/button1.wav;close all;open datapadMissionMenu" data-mouseenter="show button_glow;setitemrect button_glow 10 419 150 30" data-mouseexit="hide button_glow"><span style="top:0dp;font-family:ergoec;font-size:20dp;left:-940dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_DP_MISSION</span></div>
+<div class="item" style="left:140dp;top:420dp;width:120dp;height:25dp;" data-index="13" data-name="weapons" data-group="none" data-desc="@MENUS_VIEW_CURRENTLY_OWNED" data-action="play sound/interface/button1.wav;close all;open datapadWeaponsMenu" data-mouseenter="show button_glow;setitemrect button_glow 130 419 150 30" data-mouseexit="hide button_glow"><span style="top:0dp;font-family:ergoec;font-size:20dp;left:-940dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_WEAPONS</span></div>
+<div class="item" style="left:260dp;top:420dp;width:120dp;height:25dp;" data-index="14" data-name="force" data-group="none" data-desc="@MENUS_VIEW_CURRENT_FORCE_POWERS" data-action="play sound/interface/button1.wav;close all;open datapadForcePowersMenu" data-mouseenter="show button_glow;setitemrect button_glow 250 419 150 30" data-mouseexit="hide button_glow"><span style="top:0dp;font-family:ergoec;font-size:20dp;left:-940dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_DP_FORCE</span></div>
+<div class="item decoration" style="left:380dp;top:420dp;width:120dp;height:25dp;" data-index="15" data-name="moves" data-group="none"><span style="top:0dp;font-family:ergoec;font-size:20dp;left:-940dp;width:2000dp;text-align:center;color:#ffffffff;">@MENUS_MOVES</span></div>
+<div class="item" style="left:500dp;top:420dp;width:120dp;height:25dp;" data-index="16" data-name="exit" data-group="none" data-desc="@MENUS_RETURN_TO_GAME" data-action="play sound/interface/button1.wav;uiscript closedatapad" data-mouseenter="show button_glow;setitemrect button_glow 490 419 150 30" data-mouseexit="hide button_glow"><span style="top:0dp;font-family:ergoec;font-size:20dp;left:-940dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_RESUME</span></div>
+<div class="item hidden decoration" style="left:0dp;top:0dp;width:0dp;height:0dp;decorator:image(&quot;gfx/menus/menu_buttonback&quot;);image-color:#ffffffff;" data-index="17" data-name="button_glow" data-group="none"></div>
+<div class="item decoration" style="left:0dp;top:0dp;width:640dp;height:640dp;decorator:image(&quot;gfx/menus/scanlines&quot;);image-color:#ffffffff;" data-index="18" data-name="scan" data-group="none"></div>
+</div>
+<div id="rmlpaint" style="decorator:image(&quot;rmlpaint/datapadMovesMenu&quot;);"></div>
+<div id="rmldesc" style="left:-680dp;top:444dp;font-size:14dp;text-align:center;color:#ffae00cc;width:2000dp;"></div>
+</div>
+</body>
+</rml>

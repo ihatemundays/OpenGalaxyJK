@@ -1,0 +1,41 @@
+body {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	font-family: ergoec;
+	font-size: 11dp;
+	color: #ffffff;
+}
+div, span { display: block; }
+.screen {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	width: 640dp;
+	height: 480dp;
+	margin-left: -320dp;
+}
+.item { position: absolute; box-sizing: border-box; }
+#rmlpaint {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 1dp;
+	height: 1dp;
+	pointer-events: none;
+}
+#rmldesc {
+	position: absolute;
+	font-family: arialnb;
+	white-space: nowrap;
+	pointer-events: none;
+}
+.decoration { pointer-events: none; }
+.item span { position: absolute; white-space: nowrap; pointer-events: none; }
+.item span.wrap { white-space: normal; }
+.item span span { position: static; display: inline; margin-left: 8dp; }
+.hidden, .cvarhidden { display: none; }
+.disabled { opacity: 0.5; }

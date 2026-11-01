@@ -1,0 +1,19 @@
+<rml>
+<head>
+<title>sabercolor</title>
+<link type="text/rcss" href="ui/rml/base.rcss"/>
+<style>.item:hover span { color: #ffffffff; }</style>
+</head>
+<body style="" data-menu="sabercolor" data-x="245.0" data-y="57.0" data-onopen="">
+<div class="screen">
+<div style="position:absolute;left:245dp;top:57dp;width:200dp;height:370dp;">
+<div class="item decoration" style="left:0dp;top:0dp;width:200dp;height:20dp;" data-index="0" data-name="colorTitle"><span style="top:0dp;font-family:anewhope;font-size:15.3dp;left:-900dp;width:2000dp;text-align:center;color:#8cdaffff;">Saber Color</span></div>
+<div class="item" style="left:0dp;top:25dp;width:200dp;height:20dp;" data-index="1" data-name="sabercolor" data-desc="Select lightsaber blade color" data-action="uiscript saber_color"><span class="cvartext" data-cvar="ui_saber_color" data-multilabel="@MENUS_MYLANGUAGE" style="top:0dp;font-family:anewhope;font-size:13.6dp;left:100dp;color:#ffffffff;"></span></div>
+<div class="item decoration cvarstate" style="left:0dp;top:60dp;width:200dp;height:20dp;" data-index="2" data-cvartest="ui_saber_type" data-cvarrule="show" data-cvarvalues="dual" data-name="color2Title"><span style="top:0dp;font-family:anewhope;font-size:15.3dp;left:-900dp;width:2000dp;text-align:center;color:#8cdaffff;">Saber 2 Color</span></div>
+<div class="item cvarstate" style="left:0dp;top:85dp;width:200dp;height:20dp;" data-index="3" data-cvartest="ui_saber_type" data-cvarrule="show" data-cvarvalues="dual" data-name="sabercolor2" data-desc="Select second lightsaber blade color" data-action="uiscript saber2_color"><span class="cvartext" data-cvar="ui_saber2_color" data-multilabel="@MENUS_MYLANGUAGE" style="top:0dp;font-family:anewhope;font-size:13.6dp;left:100dp;color:#ffffffff;"></span></div>
+</div>
+<div id="rmlpaint" style="decorator:image(&quot;rmlpaint/sabercolor&quot;);"></div>
+<div id="rmldesc" style="left:-680dp;top:426dp;font-size:9.8dp;text-align:center;color:#3ce1d8ff;width:2000dp;"></div>
+</div>
+</body>
+</rml>

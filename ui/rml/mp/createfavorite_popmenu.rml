@@ -1,0 +1,22 @@
+<rml>
+<head>
+<title>createfavorite_popmenu</title>
+<link type="text/rcss" href="ui/rml/base.rcss"/>
+<style>.item:hover span { color: #ffffffff; }</style>
+</head>
+<body style="" data-menu="createfavorite_popmenu" data-x="201.0" data-y="151.0" data-onopen="setfocus addressEntry">
+<div class="screen">
+<div style="position:absolute;left:201dp;top:151dp;width:240dp;height:180dp;">
+<div class="item decoration" style="left:1dp;top:1dp;width:240dp;height:180dp;background-color:#000059e6;border:1dp #0000ccff;" data-index="0" data-name="setup_background" data-group="none"></div>
+<div class="item decoration" style="left:0dp;top:4dp;width:270dp;height:22dp;decorator:image(&quot;gfx/menus/menu_buttonback&quot;);image-color:#ffffffff;" data-index="1" data-name="title_glow" data-group="none"></div>
+<div class="item decoration" style="left:5dp;top:5dp;width:220dp;height:20dp;" data-index="2" data-name="title"><span style="top:1dp;font-family:anewhope;font-size:11.9dp;left:-890dp;width:2000dp;text-align:center;color:#8cdaffff;">@MENUS_FAVORITE_SERVER_INFO</span></div>
+<div class="item hidden decoration" style="left:0dp;top:0dp;width:0dp;height:0dp;decorator:image(&quot;gfx/menus/menu_buttonback&quot;);image-color:#ffffffff;" data-index="3" data-name="button_glow" data-group="none"></div>
+<div class="item decoration" style="left:10dp;top:35dp;width:220dp;height:20dp;" data-index="4" data-name="addressTitle"><span style="top:3dp;font-family:ergoec;font-size:16dp;left:-890dp;width:2000dp;text-align:center;color:#8cdaffff;">@MENUS_ENTER_IP_ADDRESS</span></div>
+<div class="item" style="left:11dp;top:60dp;width:220dp;height:20dp;background-color:#40404080;border:1dp #c9a338ff;" data-index="5" data-name="addressEntry" data-desc="@MENUS_INPUT_IP_ADDRESS_OF_SERVER" data-mouseenter="setitemcolor addressEntry backcolor .25 .25 .25 .75" data-mouseexit="setitemcolor addressEntry backcolor .25 .25 .25 .5"><span style="top:-1dp;font-family:ergoec;font-size:16dp;left:43dp;color:#ffffffff;"> <span class="cvartext" data-cvar="ui_favoriteAddress"></span></span></div>
+<div class="item" style="left:20dp;top:110dp;width:200dp;height:30dp;" data-index="6" data-name="doneText" data-desc="@MENUS_FINISHED_INPUTTING_INFO" data-action="play sound/interface/button1.wav;uiscript CreateFavorite;close createfavorite_popmenu" data-mouseenter="show button_glow;setitemrect button_glow 10 113 240 26" data-mouseexit="hide button_glow"><span style="top:5dp;font-family:anewhope;font-size:13.6dp;left:-900dp;width:2000dp;text-align:center;color:#ffae00ff;">@MENUS_DONE</span></div>
+</div>
+<div id="rmlpaint" style="decorator:image(&quot;rmlpaint/createfavorite_popmenu&quot;);"></div>
+<div id="rmldesc" style="left:-680dp;top:314dp;font-size:14dp;text-align:center;color:#ffae00cc;width:2000dp;"></div>
+</div>
+</body>
+</rml>

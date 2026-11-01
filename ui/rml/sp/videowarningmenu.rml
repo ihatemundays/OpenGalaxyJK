@@ -1,0 +1,23 @@
+<rml>
+<head>
+<title>videowarningMenu</title>
+<link type="text/rcss" href="ui/rml/base.rcss"/>
+<style>.item:hover span { color: #ffffffff; }</style>
+</head>
+<body style="background-color:#000000ff;" data-menu="videowarningMenu" data-x="100.0" data-y="120.0" data-onopen="">
+<div class="screen">
+<div style="position:absolute;left:100dp;top:120dp;width:440dp;height:320dp;">
+<div class="item decoration" style="left:100dp;top:120dp;width:440dp;height:300dp;decorator:image(&quot;gfx/menus/menu_boxred&quot;);image-color:#ffffffff;" data-index="0" data-name="warn_background" data-group="none"></div>
+<div class="item decoration" style="left:120dp;top:130dp;width:400dp;height:20dp;decorator:image(&quot;gfx/menus/menu_blendbox&quot;);image-color:#8cdaffff;" data-index="1" data-name="vidwarn_title" data-group="vidwarn"><span style="top:-3dp;font-family:anewhope;font-size:17dp;left:-800dp;width:2000dp;text-align:center;color:#8cdaffff;">@MENUS_UNAPPLIED_VIDEO_CHANGES</span></div>
+<div class="item decoration" style="left:210dp;top:240dp;width:220dp;height:20dp;" data-index="2" data-name="vidwarn_text1" data-group="vidwarn"><span style="top:0dp;font-family:ergoec;font-size:20dp;left:-890dp;width:2000dp;text-align:center;color:#ffffffff;">@MENUS_YOU_HAVE_MADE_CHANGES</span></div>
+<div class="item decoration" style="left:210dp;top:260dp;width:220dp;height:20dp;" data-index="3" data-name="vidwarn_text2" data-group="vidwarn"><span style="top:0dp;font-family:ergoec;font-size:20dp;left:-890dp;width:2000dp;text-align:center;color:#ffffffff;">@MENUS_APPLY_THESE_CHANGES_OR</span></div>
+<div class="item hidden decoration" style="left:180dp;top:380dp;width:120dp;height:24dp;decorator:image(&quot;gfx/menus/menu_buttonback&quot;);image-color:#ffffffff;" data-index="4" data-name="vidwarn_no_button" data-group="vidwarn"></div>
+<div class="item" style="left:180dp;top:380dp;width:120dp;height:24dp;" data-index="5" data-name="vidwarn_no" data-group="vidwarn" data-desc="@MENUS_DO_NOT_APPLY_CHANGES" data-action="play sound/interface/esc.wav;close videowarningMenu;setcvar ui_r_modified 0;rundeferred" data-mouseenter="show vidwarn_no_button" data-mouseexit="hide vidwarn_no_button"><span style="top:-3dp;font-family:ergoec;font-size:20dp;left:-940dp;width:2000dp;text-align:center;color:#c9a338ff;">@MENUS_DISCARD</span></div>
+<div class="item hidden decoration" style="left:340dp;top:380dp;width:120dp;height:24dp;decorator:image(&quot;gfx/menus/menu_buttonback&quot;);image-color:#ffffffff;" data-index="6" data-name="vidwarn_yes_button" data-group="vidwarn"></div>
+<div class="item" style="left:340dp;top:380dp;width:120dp;height:24dp;" data-index="7" data-name="vidwarn_yes" data-group="vidwarn" data-desc="@MENUS_APPLY_CHANGES_AND_THEN" data-action="play sound/interface/button1.wav;uiscript updatevideosetup;close all" data-mouseenter="show vidwarn_yes_button" data-mouseexit="hide vidwarn_yes_button"><span style="top:-3dp;font-family:ergoec;font-size:20dp;left:-940dp;width:2000dp;text-align:center;color:#c9a338ff;">@MENUS_APPLY</span></div>
+</div>
+<div id="rmlpaint" style="decorator:image(&quot;rmlpaint/videowarningMenu&quot;);"></div>
+<div id="rmldesc" style="left:-680dp;top:360dp;font-size:14dp;text-align:center;color:#ffae00cc;width:2000dp;"></div>
+</div>
+</body>
+</rml>
